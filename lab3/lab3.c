@@ -33,10 +33,6 @@ int(kbd_test_scan)() {
 
 
 
-
-
-
-
   return 0;
 }
 
