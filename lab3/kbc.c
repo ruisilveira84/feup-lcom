@@ -31,4 +31,21 @@ int (read_KBC_output)(uint8_t port, uint8_t *output) {
     return 1;
 }
 
+int (write_KBC_command)(uint8_t port, uint8_t commandByte) {
+    uint8_t attemp = 10;
+    uint8_t status;
+
+    while (attemp != 0) {
+        if (read_KBC_status(&status) != 0) return 1;
+
+        if ((status & BIT(1)) == 0) {
+            if (sys_outb(port, commandByte) != 0) return 1;
+            return 0;
+        }
+        tickdelay(micros_to_ticks(20000));
+        attemp--;
+    }
+    return 1;
+}
+
 
