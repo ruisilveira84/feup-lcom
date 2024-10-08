@@ -1,4 +1,4 @@
-# Computer Graphics 2022/2023
+# Computer Labs 2022/2023
 
 This repository contains the weekly labs and group project for the [LCOM](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520323) course unit at [FEUP](https://sigarra.up.pt/feup/pt/web_page.inicial).
 
