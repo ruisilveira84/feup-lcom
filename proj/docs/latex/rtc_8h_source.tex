@@ -1,0 +1,26 @@
+\hypertarget{rtc_8h_source}{}\doxysection{rtc.\+h}
+\label{rtc_8h_source}\index{src/rtc.h@{src/rtc.h}}
+\mbox{\hyperlink{rtc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define RTC\_ADDR\_REG 0x70}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define RTC\_DATA\_REG 0x71}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{12 int (\mbox{\hyperlink{rtc_8h_a701a45f9003eb8c8e0bcaf46e9b0c750}{writeRtc}})(uint8\_t loc, uint8\_t cmd);}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{20 int (\mbox{\hyperlink{rtc_8h_ab4bcca6758c0eee348ab56ba991ead76}{readRtc}})(uint8\_t loc, uint8\_t* out);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26 bool (\mbox{\hyperlink{rtc_8h_a846a6b45f1bba534592b40006cb2890e}{rtcUpdating}})();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32 bool (\mbox{\hyperlink{rtc_8h_afd3ee4a2480f02fb8b23c8b4452d59cc}{rtcBinary}})();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{39 uint8\_t (\mbox{\hyperlink{rtc_8h_aebd89832ae7e5b09a3ab02feccf6c023}{toBinary}})(uint8\_t n);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{46 int (\mbox{\hyperlink{rtc_8h_ac4f14c22b777d07aecd5f55b02ecc5e8}{rtcReadHours}})(uint8\_t* out);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{53 int (\mbox{\hyperlink{rtc_8h_a2d5cd68e072711a16a9f264898622b94}{rtcReadMinutes}})(uint8\_t* out);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{60 int (\mbox{\hyperlink{rtc_8h_ac750e8cbef675f155be60c814728cf11}{rtcReadSeconds}})(uint8\_t* out);}
+
+\end{DoxyCode}

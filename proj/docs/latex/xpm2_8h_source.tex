@@ -1,0 +1,1446 @@
+\hypertarget{xpm2_8h_source}{}\doxysection{xpm2.\+h}
+\label{xpm2_8h_source}\index{src/xpm2.h@{src/xpm2.h}}
+\mbox{\hyperlink{xpm2_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <stddef.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} ComboioCP[] = \{}
+\DoxyCodeLine{7 \textcolor{stringliteral}{"{}100 200 2 1"{}},}
+\DoxyCodeLine{8 \textcolor{comment}{/* colors */}}
+\DoxyCodeLine{9 \textcolor{stringliteral}{"{}  c \#FFFF00"{}},}
+\DoxyCodeLine{10 \textcolor{stringliteral}{"{}! c \#800000"{}},}
+\DoxyCodeLine{11 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{12 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{13 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{14 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{15 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{16 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{17 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{18 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{19 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{20 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{21 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{22 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{23 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{24 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{25 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{26 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{27 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{28 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{29 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{30 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{31 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{32 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{33 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{34 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{35 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{36 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{37 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{38 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{39 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{40 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{41 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{42 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{43 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{44 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{45 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{46 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{47 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{48 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{49 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{50 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{51 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{52 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{53 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{54 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{55 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{56 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{57 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{58 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{59 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{60 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{61 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{62 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{63 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{64 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{65 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{66 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{67 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{68 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{69 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{70 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{71 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{72 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{73 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{74 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{75 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{76 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{77 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{78 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{79 \textcolor{stringliteral}{"{}  !!                    !!!!!!!!!!!!!!!!!!!!                !!!!!!!!!!!!!!!!                    !!  "{}},}
+\DoxyCodeLine{80 \textcolor{stringliteral}{"{}  !!               !!!!!!!!!!!!!!!!!!!!!!!!!            !!!!!!!!!!!!!!!!!!!!!!!!!               !!  "{}},}
+\DoxyCodeLine{81 \textcolor{stringliteral}{"{}  !!            !!!!!!!!!!!!!!!!!!!!!!!!!!!            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!            !!  "{}},}
+\DoxyCodeLine{82 \textcolor{stringliteral}{"{}  !!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!  "{}},}
+\DoxyCodeLine{83 \textcolor{stringliteral}{"{}  !!         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         !!  "{}},}
+\DoxyCodeLine{84 \textcolor{stringliteral}{"{}  !!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!  "{}},}
+\DoxyCodeLine{85 \textcolor{stringliteral}{"{}  !!       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!       !!  "{}},}
+\DoxyCodeLine{86 \textcolor{stringliteral}{"{}  !!      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      !!  "{}},}
+\DoxyCodeLine{87 \textcolor{stringliteral}{"{}  !!     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!     !!  "{}},}
+\DoxyCodeLine{88 \textcolor{stringliteral}{"{}  !!    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!  "{}},}
+\DoxyCodeLine{89 \textcolor{stringliteral}{"{}  !!    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!  "{}},}
+\DoxyCodeLine{90 \textcolor{stringliteral}{"{}  !!   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   !!  "{}},}
+\DoxyCodeLine{91 \textcolor{stringliteral}{"{}  !!   !!!!!!!!!!!!!!!!!                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   !!  "{}},}
+\DoxyCodeLine{92 \textcolor{stringliteral}{"{}  !!   !!!!!!!!!!!!!!                          !!!!!!!!!!!!!                   !!!!!!!!!!!!!!   !!  "{}},}
+\DoxyCodeLine{93 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!!!                          !!!!!!!!!!!!!                     !!!!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{94 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!!                           !!!!!!!!!!!!                       !!!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{95 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!                           !!!!!!!!!!!!                         !!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{96 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!                           !!!!!!!!!!!!                         !!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{97 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!                          !!!!!!!!!!!!                          !!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{98 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!                          !!!!!!!!!!!!                           !!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{99 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!                         !!!!!!!!!!!!                            !!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{100 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!                        !!!!!!!!!!!!                            !!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{101 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!                        !!!!!!!!!!!!                            !!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{102 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!!                      !!!!!!!!!!!!                            !!!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{103 \textcolor{stringliteral}{"{}  !!  !!!!!!!!!!!!!                      !!!!!!!!!!!!                            !!!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{104 \textcolor{stringliteral}{"{}  !!   !!!!!!!!!!!!!                    !!!!!!!!!!!!                            !!!!!!!!!!!!!!  !!  "{}},}
+\DoxyCodeLine{105 \textcolor{stringliteral}{"{}  !!   !!!!!!!!!!!!!!!                !!!!!!!!!!!!!!                          !!!!!!!!!!!!!!!   !!  "{}},}
+\DoxyCodeLine{106 \textcolor{stringliteral}{"{}  !!   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   !!  "{}},}
+\DoxyCodeLine{107 \textcolor{stringliteral}{"{}  !!    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!  "{}},}
+\DoxyCodeLine{108 \textcolor{stringliteral}{"{}  !!    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!  "{}},}
+\DoxyCodeLine{109 \textcolor{stringliteral}{"{}  !!     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!     !!  "{}},}
+\DoxyCodeLine{110 \textcolor{stringliteral}{"{}  !!      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      !!  "{}},}
+\DoxyCodeLine{111 \textcolor{stringliteral}{"{}  !!      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      !!  "{}},}
+\DoxyCodeLine{112 \textcolor{stringliteral}{"{}  !!       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!       !!  "{}},}
+\DoxyCodeLine{113 \textcolor{stringliteral}{"{}  !!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!  "{}},}
+\DoxyCodeLine{114 \textcolor{stringliteral}{"{}  !!          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          !!  "{}},}
+\DoxyCodeLine{115 \textcolor{stringliteral}{"{}  !!           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!           !!  "{}},}
+\DoxyCodeLine{116 \textcolor{stringliteral}{"{}  !!             !!!!!!!!!!!!!!!!!!!!!!!!!!!         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!             !!  "{}},}
+\DoxyCodeLine{117 \textcolor{stringliteral}{"{}  !!                !!!!!!!!!!!!!!!!!!!!!           !!!!!!!!!!!!!!!!!!!!!!!!!!!!                !!  "{}},}
+\DoxyCodeLine{118 \textcolor{stringliteral}{"{}  !!                                                !!!!!!!!!!!!!!!                             !!  "{}},}
+\DoxyCodeLine{119 \textcolor{stringliteral}{"{}  !!                                               !!!!!!!!!!!!!!                               !!  "{}},}
+\DoxyCodeLine{120 \textcolor{stringliteral}{"{}  !!                                               !!!!!!!!!!!!!!                               !!  "{}},}
+\DoxyCodeLine{121 \textcolor{stringliteral}{"{}  !!                                              !!!!!!!!!!!!!!                                !!  "{}},}
+\DoxyCodeLine{122 \textcolor{stringliteral}{"{}  !!                                             !!!!!!!!!!!!!!                                 !!  "{}},}
+\DoxyCodeLine{123 \textcolor{stringliteral}{"{}  !!                                             !!!!!!!!!!!!!!                                 !!  "{}},}
+\DoxyCodeLine{124 \textcolor{stringliteral}{"{}  !!                                            !!!!!!!!!!!!!!                                  !!  "{}},}
+\DoxyCodeLine{125 \textcolor{stringliteral}{"{}  !!                                            !!!!!!!!!!!!!!                                  !!  "{}},}
+\DoxyCodeLine{126 \textcolor{stringliteral}{"{}  !!                                           !!!!!!!!!!!!!!                                   !!  "{}},}
+\DoxyCodeLine{127 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{128 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{129 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{130 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{131 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{132 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{133 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{134 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{135 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{136 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{137 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{138 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{139 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{140 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{141 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{142 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{143 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{144 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{145 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{146 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{147 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{148 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{149 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{150 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{151 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{152 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{153 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{154 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{155 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{156 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{157 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{158 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{159 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{160 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{161 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{162 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{163 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{164 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{165 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{166 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{167 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{168 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{169 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{170 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{171 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{172 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{173 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{174 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{175 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{176 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{177 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{178 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{179 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{180 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{181 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{182 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{183 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{184 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{185 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{186 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{187 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{188 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{189 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{190 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{191 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{192 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{193 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{194 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{195 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{196 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{197 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{198 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{199 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{200 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{201 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{202 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{203 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{204 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{205 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{206 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{207 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{208 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{209 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{210 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}},}
+\DoxyCodeLine{211 \textcolor{stringliteral}{"{}  !!                                                                                            !!  "{}}}
+\DoxyCodeLine{212 \};}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} sun[] = \{}
+\DoxyCodeLine{216 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{217 \textcolor{stringliteral}{"{}50 50 2 1"{}},}
+\DoxyCodeLine{218 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{219 \textcolor{stringliteral}{"{}! c \#FFFF00"{}},}
+\DoxyCodeLine{220 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{221 \textcolor{stringliteral}{"{}                       !                          "{}},}
+\DoxyCodeLine{222 \textcolor{stringliteral}{"{}                       !                          "{}},}
+\DoxyCodeLine{223 \textcolor{stringliteral}{"{}                       !                          "{}},}
+\DoxyCodeLine{224 \textcolor{stringliteral}{"{}                       !                    !     "{}},}
+\DoxyCodeLine{225 \textcolor{stringliteral}{"{}                       !                   !!     "{}},}
+\DoxyCodeLine{226 \textcolor{stringliteral}{"{}                       !                  !!      "{}},}
+\DoxyCodeLine{227 \textcolor{stringliteral}{"{}      !!               !                 !!       "{}},}
+\DoxyCodeLine{228 \textcolor{stringliteral}{"{}       !!                               !!        "{}},}
+\DoxyCodeLine{229 \textcolor{stringliteral}{"{}        !!                             !!         "{}},}
+\DoxyCodeLine{230 \textcolor{stringliteral}{"{}         !!                            !          "{}},}
+\DoxyCodeLine{231 \textcolor{stringliteral}{"{}          !!       !!!!!!!!!!!        !!          "{}},}
+\DoxyCodeLine{232 \textcolor{stringliteral}{"{}           !!    !!!!!!!!!!!!!!!      !           "{}},}
+\DoxyCodeLine{233 \textcolor{stringliteral}{"{}                !!!!!!!!!!!!!!!!!                 "{}},}
+\DoxyCodeLine{234 \textcolor{stringliteral}{"{}               !!!!!!!!!!!!!!!!!!!                "{}},}
+\DoxyCodeLine{235 \textcolor{stringliteral}{"{}              !!!!!!!!!!!!!!!!!!!!!               "{}},}
+\DoxyCodeLine{236 \textcolor{stringliteral}{"{}             !!!!!!!!!!!!!!!!!!!!!!!              "{}},}
+\DoxyCodeLine{237 \textcolor{stringliteral}{"{}            !!!!!!!!!!!!!!!!!!!!!!!!!             "{}},}
+\DoxyCodeLine{238 \textcolor{stringliteral}{"{}            !!!!!!!!!!!!!!!!!!!!!!!!!             "{}},}
+\DoxyCodeLine{239 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{240 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{241 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{242 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{243 \textcolor{stringliteral}{"{}   !!!!!!  !!!!!!!!!!!!!!!!!!!!!!!!!!!  !!!!!!    "{}},}
+\DoxyCodeLine{244 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{245 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{246 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{247 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{248 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{249 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{250 \textcolor{stringliteral}{"{}            !!!!!!!!!!!!!!!!!!!!!!!!!             "{}},}
+\DoxyCodeLine{251 \textcolor{stringliteral}{"{}            !!!!!!!!!!!!!!!!!!!!!!!!!             "{}},}
+\DoxyCodeLine{252 \textcolor{stringliteral}{"{}             !!!!!!!!!!!!!!!!!!!!!!!              "{}},}
+\DoxyCodeLine{253 \textcolor{stringliteral}{"{}              !!!!!!!!!!!!!!!!!!!!!               "{}},}
+\DoxyCodeLine{254 \textcolor{stringliteral}{"{}               !!!!!!!!!!!!!!!!!!!                "{}},}
+\DoxyCodeLine{255 \textcolor{stringliteral}{"{}                !!!!!!!!!!!!!!!!!                 "{}},}
+\DoxyCodeLine{256 \textcolor{stringliteral}{"{}           !!    !!!!!!!!!!!!!!!     !            "{}},}
+\DoxyCodeLine{257 \textcolor{stringliteral}{"{}          !!       !!!!!!!!!!!       !!           "{}},}
+\DoxyCodeLine{258 \textcolor{stringliteral}{"{}         !!                           !!          "{}},}
+\DoxyCodeLine{259 \textcolor{stringliteral}{"{}        !!                             !!         "{}},}
+\DoxyCodeLine{260 \textcolor{stringliteral}{"{}       !!                !              !         "{}},}
+\DoxyCodeLine{261 \textcolor{stringliteral}{"{}      !!                 !               !        "{}},}
+\DoxyCodeLine{262 \textcolor{stringliteral}{"{}      !                  !               !!       "{}},}
+\DoxyCodeLine{263 \textcolor{stringliteral}{"{}                         !                !       "{}},}
+\DoxyCodeLine{264 \textcolor{stringliteral}{"{}                         !                        "{}},}
+\DoxyCodeLine{265 \textcolor{stringliteral}{"{}                         !                        "{}},}
+\DoxyCodeLine{266 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{267 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{268 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{269 \textcolor{stringliteral}{"{}                                                  "{}}}
+\DoxyCodeLine{270 \};}
+\DoxyCodeLine{271 }
+\DoxyCodeLine{272 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} moon[] = \{}
+\DoxyCodeLine{273 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{274 \textcolor{stringliteral}{"{}50 50 2 1"{}},}
+\DoxyCodeLine{275 \textcolor{comment}{/* colors */}}
+\DoxyCodeLine{276 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{277 \textcolor{stringliteral}{"{}! c \#d3d3d3"{}},}
+\DoxyCodeLine{278 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{279 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{280 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{281 \textcolor{stringliteral}{"{}                        !!!!!!!!!                 "{}},}
+\DoxyCodeLine{282 \textcolor{stringliteral}{"{}                       !!!!!!!!!!!!!!             "{}},}
+\DoxyCodeLine{283 \textcolor{stringliteral}{"{}                        !!!!!!!!!!!!!!!           "{}},}
+\DoxyCodeLine{284 \textcolor{stringliteral}{"{}                           !!!!!!!!!!!!!!         "{}},}
+\DoxyCodeLine{285 \textcolor{stringliteral}{"{}                             !!!!!!!!!!!!!        "{}},}
+\DoxyCodeLine{286 \textcolor{stringliteral}{"{}                               !!!!!!!!!!!!       "{}},}
+\DoxyCodeLine{287 \textcolor{stringliteral}{"{}                                !!!!!!!!!!!       "{}},}
+\DoxyCodeLine{288 \textcolor{stringliteral}{"{}                                !!!!!!!!!!!!      "{}},}
+\DoxyCodeLine{289 \textcolor{stringliteral}{"{}                                 !!!!!!!!!!!      "{}},}
+\DoxyCodeLine{290 \textcolor{stringliteral}{"{}                                 !!!!!!!!!!!      "{}},}
+\DoxyCodeLine{291 \textcolor{stringliteral}{"{}                                 !!!!!!!!!!!      "{}},}
+\DoxyCodeLine{292 \textcolor{stringliteral}{"{}                                 !!!!!!!!!!!      "{}},}
+\DoxyCodeLine{293 \textcolor{stringliteral}{"{}                                 !!!!!!!!!!!      "{}},}
+\DoxyCodeLine{294 \textcolor{stringliteral}{"{}                                 !!!!!!!!!!!      "{}},}
+\DoxyCodeLine{295 \textcolor{stringliteral}{"{}                                 !!!!!!!!!!!!     "{}},}
+\DoxyCodeLine{296 \textcolor{stringliteral}{"{}                                !!!!!!!!!!!!!     "{}},}
+\DoxyCodeLine{297 \textcolor{stringliteral}{"{}                                !!!!!!!!!!!!!     "{}},}
+\DoxyCodeLine{298 \textcolor{stringliteral}{"{}                               !!!!!!!!!!!!!!     "{}},}
+\DoxyCodeLine{299 \textcolor{stringliteral}{"{}                               !!!!!!!!!!!!!!     "{}},}
+\DoxyCodeLine{300 \textcolor{stringliteral}{"{}                              !!!!!!!!!!!!!!!     "{}},}
+\DoxyCodeLine{301 \textcolor{stringliteral}{"{}                             !!!!!!!!!!!!!!!!     "{}},}
+\DoxyCodeLine{302 \textcolor{stringliteral}{"{}                             !!!!!!!!!!!!!!!      "{}},}
+\DoxyCodeLine{303 \textcolor{stringliteral}{"{}                            !!!!!!!!!!!!!!!!      "{}},}
+\DoxyCodeLine{304 \textcolor{stringliteral}{"{}                            !!!!!!!!!!!!!!!!      "{}},}
+\DoxyCodeLine{305 \textcolor{stringliteral}{"{}                           !!!!!!!!!!!!!!!!!      "{}},}
+\DoxyCodeLine{306 \textcolor{stringliteral}{"{}                          !!!!!!!!!!!!!!!!!!      "{}},}
+\DoxyCodeLine{307 \textcolor{stringliteral}{"{}                          !!!!!!!!!!!!!!!!!!      "{}},}
+\DoxyCodeLine{308 \textcolor{stringliteral}{"{}                         !!!!!!!!!!!!!!!!!!!      "{}},}
+\DoxyCodeLine{309 \textcolor{stringliteral}{"{}                        !!!!!!!!!!!!!!!!!!!       "{}},}
+\DoxyCodeLine{310 \textcolor{stringliteral}{"{}                      !!!!!!!!!!!!!!!!!!!!!       "{}},}
+\DoxyCodeLine{311 \textcolor{stringliteral}{"{}                     !!!!!!!!!!!!!!!!!!!!!!       "{}},}
+\DoxyCodeLine{312 \textcolor{stringliteral}{"{}                  !!!!!!!!!!!!!!!!!!!!!!!!!       "{}},}
+\DoxyCodeLine{313 \textcolor{stringliteral}{"{}              !!!!!!!!!!!!!!!!!!!!!!!!!!!!        "{}},}
+\DoxyCodeLine{314 \textcolor{stringliteral}{"{}  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        "{}},}
+\DoxyCodeLine{315 \textcolor{stringliteral}{"{}   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         "{}},}
+\DoxyCodeLine{316 \textcolor{stringliteral}{"{}   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!         "{}},}
+\DoxyCodeLine{317 \textcolor{stringliteral}{"{}   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          "{}},}
+\DoxyCodeLine{318 \textcolor{stringliteral}{"{}    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          "{}},}
+\DoxyCodeLine{319 \textcolor{stringliteral}{"{}     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!           "{}},}
+\DoxyCodeLine{320 \textcolor{stringliteral}{"{}      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!            "{}},}
+\DoxyCodeLine{321 \textcolor{stringliteral}{"{}       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!             "{}},}
+\DoxyCodeLine{322 \textcolor{stringliteral}{"{}        !!!!!!!!!!!!!!!!!!!!!!!!!!!               "{}},}
+\DoxyCodeLine{323 \textcolor{stringliteral}{"{}           !!!!!!!!!!!!!!!!!!!!!                  "{}},}
+\DoxyCodeLine{324 \textcolor{stringliteral}{"{}               !!!!!!!!!!!!!                      "{}},}
+\DoxyCodeLine{325 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{326 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{327 \textcolor{stringliteral}{"{}                                                  "{}},}
+\DoxyCodeLine{328 \textcolor{stringliteral}{"{}                                                  "{}}}
+\DoxyCodeLine{329 \};}
+\DoxyCodeLine{330 }
+\DoxyCodeLine{331 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{332 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} symbolColon[] = \{}
+\DoxyCodeLine{333 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{334 \textcolor{comment}{/* colors */}}
+\DoxyCodeLine{335 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{336 \textcolor{stringliteral}{"{}! c \#d3d3d3"{}},}
+\DoxyCodeLine{337 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{338 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{339 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{340 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{341 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{342 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{343 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{344 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{345 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{346 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{347 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{348 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{349 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{350 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{351 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{352 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{353 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{354 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{355 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{356 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{357 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{358 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{359 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{360 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{361 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{362 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{363 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{364 \textcolor{stringliteral}{"{}        !!!!!!!!        "{}},}
+\DoxyCodeLine{365 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{366 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{367 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{368 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{369 \textcolor{stringliteral}{"{}                        "{}}}
+\DoxyCodeLine{370 \};}
+\DoxyCodeLine{371 }
+\DoxyCodeLine{372 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{373 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} obstacleWide[] = \{}
+\DoxyCodeLine{374 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{375 \textcolor{stringliteral}{"{}200 100 4 1"{}},}
+\DoxyCodeLine{376 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{377 \textcolor{stringliteral}{"{}. c \#800000"{}},}
+\DoxyCodeLine{378 \textcolor{stringliteral}{"{}X c \#FFFF00"{}},}
+\DoxyCodeLine{379 \textcolor{stringliteral}{"{}o c \#d3d3d3"{}},}
+\DoxyCodeLine{380 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{381 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{382 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{383 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{384 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{385 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{386 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{387 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{388 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{389 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{390 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{391 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{392 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{393 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{394 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{395 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{396 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{397 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{398 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{399 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{400 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{401 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{402 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{403 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{404 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{405 \textcolor{stringliteral}{"{}ooooooooooooooooo..........oooooooo..........oooooooo..........oooooooo........ooooooo........ooooooo........oooooo.......ooooooo.......oooooo.......ooooooo.......oooooo.......ooooooo.......oooooooooo"{}},}
+\DoxyCodeLine{406 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{407 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{408 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{409 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{410 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{411 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{412 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{413 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{414 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{415 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{416 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{417 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{418 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{419 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{420 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{421 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{422 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{423 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{424 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{425 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{426 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{427 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{428 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{429 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{430 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{431 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{432 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{433 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{434 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{435 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{436 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{437 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{438 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{439 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{440 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{441 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{442 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{443 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{444 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{445 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{446 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{447 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{448 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{449 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{450 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{451 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{452 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{453 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{454 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{455 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{456 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{457 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{458 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{459 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{460 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{461 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{462 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{463 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{464 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{465 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{466 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{467 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{468 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{469 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{470 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{471 \textcolor{stringliteral}{"{}oooooooo                                                                                                                                                                                         ooooooo"{}},}
+\DoxyCodeLine{472 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}},}
+\DoxyCodeLine{473 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}},}
+\DoxyCodeLine{474 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}},}
+\DoxyCodeLine{475 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}},}
+\DoxyCodeLine{476 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}},}
+\DoxyCodeLine{477 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}},}
+\DoxyCodeLine{478 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}},}
+\DoxyCodeLine{479 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}},}
+\DoxyCodeLine{480 \textcolor{stringliteral}{"{}ooooooooXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXooooooo"{}}}
+\DoxyCodeLine{481 \};}
+\DoxyCodeLine{482 }
+\DoxyCodeLine{483 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} cursor[] = \{}
+\DoxyCodeLine{484 \textcolor{comment}{/* columns rows colors chars-\/per-\/pixel */}}
+\DoxyCodeLine{485 \textcolor{stringliteral}{"{}19 24 3 1 "{}},}
+\DoxyCodeLine{486 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{487 \textcolor{stringliteral}{"{}. c \#000001"{}},}
+\DoxyCodeLine{488 \textcolor{stringliteral}{"{}X c \#FFF9BD"{}},}
+\DoxyCodeLine{489 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{490 \textcolor{stringliteral}{"{}       ..          "{}},}
+\DoxyCodeLine{491 \textcolor{stringliteral}{"{}      .XX.         "{}},}
+\DoxyCodeLine{492 \textcolor{stringliteral}{"{}      .XX.         "{}},}
+\DoxyCodeLine{493 \textcolor{stringliteral}{"{}      .XX.         "{}},}
+\DoxyCodeLine{494 \textcolor{stringliteral}{"{}      .XX.         "{}},}
+\DoxyCodeLine{495 \textcolor{stringliteral}{"{}      .XX.         "{}},}
+\DoxyCodeLine{496 \textcolor{stringliteral}{"{}      .XX...       "{}},}
+\DoxyCodeLine{497 \textcolor{stringliteral}{"{}      .XX.XX...    "{}},}
+\DoxyCodeLine{498 \textcolor{stringliteral}{"{}      .XX.XX.XX... "{}},}
+\DoxyCodeLine{499 \textcolor{stringliteral}{"{} ..   .XX.XX.XX.XX."{}},}
+\DoxyCodeLine{500 \textcolor{stringliteral}{"{}.XX.  .XX.XX.XX.XX."{}},}
+\DoxyCodeLine{501 \textcolor{stringliteral}{"{}.XXX...XX.XX.XX.XX."{}},}
+\DoxyCodeLine{502 \textcolor{stringliteral}{"{} .XXXX.XXXXXXXXXXX."{}},}
+\DoxyCodeLine{503 \textcolor{stringliteral}{"{} .XXXX.XXX.XX.XX.X."{}},}
+\DoxyCodeLine{504 \textcolor{stringliteral}{"{}  .XXXXXXX.XX.XX.X."{}},}
+\DoxyCodeLine{505 \textcolor{stringliteral}{"{}  .XXXXXXXXXXXXXXX."{}},}
+\DoxyCodeLine{506 \textcolor{stringliteral}{"{}  .XXXXXXXXXXXXXXX."{}},}
+\DoxyCodeLine{507 \textcolor{stringliteral}{"{}   .XXXXXXXXXXXXXX."{}},}
+\DoxyCodeLine{508 \textcolor{stringliteral}{"{}   .XXXXXXXXXXXXXX."{}},}
+\DoxyCodeLine{509 \textcolor{stringliteral}{"{}   .XXXXXXXXXXXXXX."{}},}
+\DoxyCodeLine{510 \textcolor{stringliteral}{"{}    .XXXXXXXXXXXX. "{}},}
+\DoxyCodeLine{511 \textcolor{stringliteral}{"{}     .XXXXXXXXXX.  "{}},}
+\DoxyCodeLine{512 \textcolor{stringliteral}{"{}      ..XXXXXX..   "{}},}
+\DoxyCodeLine{513 \textcolor{stringliteral}{"{}        ......     "{}}}
+\DoxyCodeLine{514 \};}
+\DoxyCodeLine{515 }
+\DoxyCodeLine{516 }
+\DoxyCodeLine{517 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num0[] = \{}
+\DoxyCodeLine{518 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{519 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{520 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{521 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{522 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{523 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{524 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{525 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{526 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{527 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{528 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{529 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{530 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{531 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{532 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{533 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{534 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{535 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{536 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{537 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{538 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{539 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{540 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{541 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{542 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{543 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{544 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{545 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{546 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{547 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{548 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{549 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{550 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{551 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{552 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{553 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{554 \textcolor{stringliteral}{"{}....                ...."{}}}
+\DoxyCodeLine{555 \};}
+\DoxyCodeLine{556 }
+\DoxyCodeLine{557 }
+\DoxyCodeLine{558 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{559 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num1[] = \{}
+\DoxyCodeLine{560 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{561 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{562 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{563 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{564 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{565 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{566 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{567 \textcolor{stringliteral}{"{}........      .........."{}},}
+\DoxyCodeLine{568 \textcolor{stringliteral}{"{}........      .........."{}},}
+\DoxyCodeLine{569 \textcolor{stringliteral}{"{}......        .........."{}},}
+\DoxyCodeLine{570 \textcolor{stringliteral}{"{}......        .........."{}},}
+\DoxyCodeLine{571 \textcolor{stringliteral}{"{}....          .........."{}},}
+\DoxyCodeLine{572 \textcolor{stringliteral}{"{}....          .........."{}},}
+\DoxyCodeLine{573 \textcolor{stringliteral}{"{}..      ..    .........."{}},}
+\DoxyCodeLine{574 \textcolor{stringliteral}{"{}..      ..    .........."{}},}
+\DoxyCodeLine{575 \textcolor{stringliteral}{"{}..    ....    .........."{}},}
+\DoxyCodeLine{576 \textcolor{stringliteral}{"{}..    ....    .........."{}},}
+\DoxyCodeLine{577 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{578 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{579 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{580 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{581 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{582 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{583 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{584 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{585 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{586 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{587 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{588 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{589 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{590 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{591 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{592 \textcolor{stringliteral}{"{}..........    .........."{}},}
+\DoxyCodeLine{593 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{594 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{595 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{596 \textcolor{stringliteral}{"{}                        "{}}}
+\DoxyCodeLine{597 \};}
+\DoxyCodeLine{598 }
+\DoxyCodeLine{599 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{600 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num2[] = \{}
+\DoxyCodeLine{601 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{602 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{603 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{604 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{605 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{606 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{607 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{608 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{609 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{610 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{611 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{612 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{613 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{614 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{615 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{616 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{617 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{618 \textcolor{stringliteral}{"{}................      .."{}},}
+\DoxyCodeLine{619 \textcolor{stringliteral}{"{}................      .."{}},}
+\DoxyCodeLine{620 \textcolor{stringliteral}{"{}..............      ...."{}},}
+\DoxyCodeLine{621 \textcolor{stringliteral}{"{}..............      ...."{}},}
+\DoxyCodeLine{622 \textcolor{stringliteral}{"{}............      ......"{}},}
+\DoxyCodeLine{623 \textcolor{stringliteral}{"{}............      ......"{}},}
+\DoxyCodeLine{624 \textcolor{stringliteral}{"{}..........      ........"{}},}
+\DoxyCodeLine{625 \textcolor{stringliteral}{"{}..........      ........"{}},}
+\DoxyCodeLine{626 \textcolor{stringliteral}{"{}........      .........."{}},}
+\DoxyCodeLine{627 \textcolor{stringliteral}{"{}........      .........."{}},}
+\DoxyCodeLine{628 \textcolor{stringliteral}{"{}......      ............"{}},}
+\DoxyCodeLine{629 \textcolor{stringliteral}{"{}......      ............"{}},}
+\DoxyCodeLine{630 \textcolor{stringliteral}{"{}....      .............."{}},}
+\DoxyCodeLine{631 \textcolor{stringliteral}{"{}....      .............."{}},}
+\DoxyCodeLine{632 \textcolor{stringliteral}{"{}..      ................"{}},}
+\DoxyCodeLine{633 \textcolor{stringliteral}{"{}..      ................"{}},}
+\DoxyCodeLine{634 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{635 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{636 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{637 \textcolor{stringliteral}{"{}                        "{}}}
+\DoxyCodeLine{638 \};}
+\DoxyCodeLine{639 }
+\DoxyCodeLine{640 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{641 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num3[] = \{}
+\DoxyCodeLine{642 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{643 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{644 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{645 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{646 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{647 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{648 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{649 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{650 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{651 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{652 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{653 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{654 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{655 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{656 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{657 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{658 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{659 \textcolor{stringliteral}{"{}................      .."{}},}
+\DoxyCodeLine{660 \textcolor{stringliteral}{"{}................      .."{}},}
+\DoxyCodeLine{661 \textcolor{stringliteral}{"{}........            ...."{}},}
+\DoxyCodeLine{662 \textcolor{stringliteral}{"{}........            ...."{}},}
+\DoxyCodeLine{663 \textcolor{stringliteral}{"{}........            ...."{}},}
+\DoxyCodeLine{664 \textcolor{stringliteral}{"{}........            ...."{}},}
+\DoxyCodeLine{665 \textcolor{stringliteral}{"{}................      .."{}},}
+\DoxyCodeLine{666 \textcolor{stringliteral}{"{}................      .."{}},}
+\DoxyCodeLine{667 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{668 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{669 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{670 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{671 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{672 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{673 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{674 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{675 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{676 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{677 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{678 \textcolor{stringliteral}{"{}....                ...."{}}}
+\DoxyCodeLine{679 \};}
+\DoxyCodeLine{680 }
+\DoxyCodeLine{681 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{682 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num4[] = \{}
+\DoxyCodeLine{683 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{684 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{685 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{686 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{687 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{688 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{689 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{690 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{691 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{692 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{693 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{694 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{695 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{696 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{697 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{698 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{699 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{700 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{701 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{702 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{703 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{704 \textcolor{stringliteral}{"{}..                      "{}},}
+\DoxyCodeLine{705 \textcolor{stringliteral}{"{}..                      "{}},}
+\DoxyCodeLine{706 \textcolor{stringliteral}{"{}....                    "{}},}
+\DoxyCodeLine{707 \textcolor{stringliteral}{"{}....                    "{}},}
+\DoxyCodeLine{708 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{709 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{710 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{711 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{712 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{713 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{714 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{715 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{716 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{717 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{718 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{719 \textcolor{stringliteral}{"{}....................    "{}}}
+\DoxyCodeLine{720 \};}
+\DoxyCodeLine{721 }
+\DoxyCodeLine{722 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{723 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num5[] = \{}
+\DoxyCodeLine{724 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{725 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{726 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{727 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{728 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{729 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{730 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{731 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{732 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{733 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{734 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{735 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{736 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{737 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{738 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{739 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{740 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{741 \textcolor{stringliteral}{"{}                    ...."{}},}
+\DoxyCodeLine{742 \textcolor{stringliteral}{"{}                    ...."{}},}
+\DoxyCodeLine{743 \textcolor{stringliteral}{"{}                      .."{}},}
+\DoxyCodeLine{744 \textcolor{stringliteral}{"{}                      .."{}},}
+\DoxyCodeLine{745 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{746 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{747 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{748 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{749 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{750 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{751 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{752 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{753 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{754 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{755 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{756 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{757 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{758 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{759 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{760 \textcolor{stringliteral}{"{}....                ...."{}}}
+\DoxyCodeLine{761 \};}
+\DoxyCodeLine{762 }
+\DoxyCodeLine{763 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{764 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num6[] = \{}
+\DoxyCodeLine{765 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{766 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{767 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{768 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{769 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{770 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{771 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{772 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{773 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{774 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{775 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{776 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{777 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{778 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{779 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{780 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{781 \textcolor{stringliteral}{"{}    ...................."{}},}
+\DoxyCodeLine{782 \textcolor{stringliteral}{"{}                    ...."{}},}
+\DoxyCodeLine{783 \textcolor{stringliteral}{"{}                    ...."{}},}
+\DoxyCodeLine{784 \textcolor{stringliteral}{"{}                      .."{}},}
+\DoxyCodeLine{785 \textcolor{stringliteral}{"{}                      .."{}},}
+\DoxyCodeLine{786 \textcolor{stringliteral}{"{}    ..............      "{}},}
+\DoxyCodeLine{787 \textcolor{stringliteral}{"{}    ..............      "{}},}
+\DoxyCodeLine{788 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{789 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{790 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{791 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{792 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{793 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{794 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{795 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{796 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{797 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{798 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{799 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{800 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{801 \textcolor{stringliteral}{"{}....                ...."{}}}
+\DoxyCodeLine{802 \};}
+\DoxyCodeLine{803 }
+\DoxyCodeLine{804 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{805 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num7[] = \{}
+\DoxyCodeLine{806 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{807 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{808 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{809 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{810 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{811 \textcolor{stringliteral}{"{}..                      "{}},}
+\DoxyCodeLine{812 \textcolor{stringliteral}{"{}..                      "{}},}
+\DoxyCodeLine{813 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{814 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{815 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{816 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{817 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{818 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{819 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{820 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{821 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{822 \textcolor{stringliteral}{"{}..................      "{}},}
+\DoxyCodeLine{823 \textcolor{stringliteral}{"{}................      .."{}},}
+\DoxyCodeLine{824 \textcolor{stringliteral}{"{}................      .."{}},}
+\DoxyCodeLine{825 \textcolor{stringliteral}{"{}................    ...."{}},}
+\DoxyCodeLine{826 \textcolor{stringliteral}{"{}................    ...."{}},}
+\DoxyCodeLine{827 \textcolor{stringliteral}{"{}................    ...."{}},}
+\DoxyCodeLine{828 \textcolor{stringliteral}{"{}................    ...."{}},}
+\DoxyCodeLine{829 \textcolor{stringliteral}{"{}..............      ...."{}},}
+\DoxyCodeLine{830 \textcolor{stringliteral}{"{}..............      ...."{}},}
+\DoxyCodeLine{831 \textcolor{stringliteral}{"{}............      ......"{}},}
+\DoxyCodeLine{832 \textcolor{stringliteral}{"{}............      ......"{}},}
+\DoxyCodeLine{833 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{834 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{835 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{836 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{837 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{838 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{839 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{840 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{841 \textcolor{stringliteral}{"{}............    ........"{}},}
+\DoxyCodeLine{842 \textcolor{stringliteral}{"{}............    ........"{}}}
+\DoxyCodeLine{843 \};}
+\DoxyCodeLine{844 }
+\DoxyCodeLine{845 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{846 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num8[] = \{}
+\DoxyCodeLine{847 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{848 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{849 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{850 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{851 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{852 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{853 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{854 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{855 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{856 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{857 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{858 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{859 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{860 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{861 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{862 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{863 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{864 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{865 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{866 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{867 \textcolor{stringliteral}{"{}                        "{}},}
+\DoxyCodeLine{868 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{869 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{870 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{871 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{872 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{873 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{874 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{875 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{876 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{877 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{878 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{879 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{880 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{881 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{882 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{883 \textcolor{stringliteral}{"{}....                ...."{}}}
+\DoxyCodeLine{884 \};}
+\DoxyCodeLine{885 }
+\DoxyCodeLine{886 \textcolor{comment}{/* XPM */}}
+\DoxyCodeLine{887 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} num9[] = \{}
+\DoxyCodeLine{888 \textcolor{comment}{/* width height num\_colors chars\_per\_pixel */}}
+\DoxyCodeLine{889 \textcolor{stringliteral}{"{}24 32 2 1"{}},}
+\DoxyCodeLine{890 \textcolor{stringliteral}{"{}  c \#d3d3d3"{}},}
+\DoxyCodeLine{891 \textcolor{stringliteral}{"{}. c \#000000"{}},}
+\DoxyCodeLine{892 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{893 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{894 \textcolor{stringliteral}{"{}....                ...."{}},}
+\DoxyCodeLine{895 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{896 \textcolor{stringliteral}{"{}..                    .."{}},}
+\DoxyCodeLine{897 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{898 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{899 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{900 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{901 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{902 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{903 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{904 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{905 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{906 \textcolor{stringliteral}{"{}    ................    "{}},}
+\DoxyCodeLine{907 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{908 \textcolor{stringliteral}{"{}      ............      "{}},}
+\DoxyCodeLine{909 \textcolor{stringliteral}{"{}..                      "{}},}
+\DoxyCodeLine{910 \textcolor{stringliteral}{"{}..                      "{}},}
+\DoxyCodeLine{911 \textcolor{stringliteral}{"{}....                    "{}},}
+\DoxyCodeLine{912 \textcolor{stringliteral}{"{}....                    "{}},}
+\DoxyCodeLine{913 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{914 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{915 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{916 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{917 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{918 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{919 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{920 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{921 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{922 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{923 \textcolor{stringliteral}{"{}....................    "{}},}
+\DoxyCodeLine{924 \textcolor{stringliteral}{"{}....................    "{}}}
+\DoxyCodeLine{925 \};}
+\DoxyCodeLine{926 }
+\DoxyCodeLine{927 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} gajo0[] = \{}
+\DoxyCodeLine{928 \textcolor{stringliteral}{"{}64 96 6 1 "{}},}
+\DoxyCodeLine{929 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{930 \textcolor{stringliteral}{"{}. c \#000001"{}},}
+\DoxyCodeLine{931 \textcolor{stringliteral}{"{}X c \#FF6A00"{}},}
+\DoxyCodeLine{932 \textcolor{stringliteral}{"{}o c \#7F3300"{}},}
+\DoxyCodeLine{933 \textcolor{stringliteral}{"{}O c \#00FFFF"{}},}
+\DoxyCodeLine{934 \textcolor{stringliteral}{"{}+ c \#FFE97F"{}},}
+\DoxyCodeLine{935 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{936 \textcolor{stringliteral}{"{}                ................................                "{}},}
+\DoxyCodeLine{937 \textcolor{stringliteral}{"{}                ................................                "{}},}
+\DoxyCodeLine{938 \textcolor{stringliteral}{"{}            ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....            "{}},}
+\DoxyCodeLine{939 \textcolor{stringliteral}{"{}            ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....            "{}},}
+\DoxyCodeLine{940 \textcolor{stringliteral}{"{}        ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....        "{}},}
+\DoxyCodeLine{941 \textcolor{stringliteral}{"{}        ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....        "{}},}
+\DoxyCodeLine{942 \textcolor{stringliteral}{"{}      ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..      "{}},}
+\DoxyCodeLine{943 \textcolor{stringliteral}{"{}      ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..      "{}},}
+\DoxyCodeLine{944 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{945 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{946 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{947 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{948 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{949 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{950 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{951 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{952 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{953 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{954 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{955 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{956 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{957 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{958 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{959 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{960 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{961 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{962 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{963 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{964 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{965 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{966 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{967 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{968 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{969 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{970 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{971 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{972 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{973 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{974 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{975 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{976 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{977 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{978 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{979 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{980 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{981 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{982 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{983 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{984 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{985 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{986 \textcolor{stringliteral}{"{}  ..........XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..........  "{}},}
+\DoxyCodeLine{987 \textcolor{stringliteral}{"{}  ..........XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..........  "{}},}
+\DoxyCodeLine{988 \textcolor{stringliteral}{"{}..oooooooooo........................................oooooooooo.."{}},}
+\DoxyCodeLine{989 \textcolor{stringliteral}{"{}..oooooooooo........................................oooooooooo.."{}},}
+\DoxyCodeLine{990 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{991 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{992 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{993 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{994 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{995 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{996 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{997 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{998 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{999 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1000 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1001 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1002 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1003 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1004 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1005 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1006 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1007 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1008 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1009 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1010 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1011 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1012 \textcolor{stringliteral}{"{}  ................OOOOOOOOOOOOOOOOOOOOOOOOOOOO................  "{}},}
+\DoxyCodeLine{1013 \textcolor{stringliteral}{"{}  ................OOOOOOOOOOOOOOOOOOOOOOOOOOOO................  "{}},}
+\DoxyCodeLine{1014 \textcolor{stringliteral}{"{}                ..OO++OOOOOO++OOOOOO++OOOOOO++..                "{}},}
+\DoxyCodeLine{1015 \textcolor{stringliteral}{"{}                ..OO++OOOOOO++OOOOOO++OOOOOO++..                "{}},}
+\DoxyCodeLine{1016 \textcolor{stringliteral}{"{}                ..OOOOOO++OOOOOO++OOOOOO++OOOO..                "{}},}
+\DoxyCodeLine{1017 \textcolor{stringliteral}{"{}                ..OOOOOO++OOOOOO++OOOOOO++OOOO..                "{}},}
+\DoxyCodeLine{1018 \textcolor{stringliteral}{"{}                ..OO++OOOOOO++OOOOOO++OOOOOO++..                "{}},}
+\DoxyCodeLine{1019 \textcolor{stringliteral}{"{}                ..OO++OOOOOO++OOOOOO++OOOOOO++..                "{}},}
+\DoxyCodeLine{1020 \textcolor{stringliteral}{"{}                ..OOOOOOOOOOOOOOOOOOOOOOOOOOOO..                "{}},}
+\DoxyCodeLine{1021 \textcolor{stringliteral}{"{}                ..OOOOOOOOOOOOOOOOOOOOOOOOOOOO..                "{}},}
+\DoxyCodeLine{1022 \textcolor{stringliteral}{"{}                ..oooooooooooooooooooooooooooo..                "{}},}
+\DoxyCodeLine{1023 \textcolor{stringliteral}{"{}                ..oooooooooooooooooooooooooooo..                "{}},}
+\DoxyCodeLine{1024 \textcolor{stringliteral}{"{}                ..oooooooooooooooooooooooooooo..                "{}},}
+\DoxyCodeLine{1025 \textcolor{stringliteral}{"{}                ..oooooooooooooooooooooooooooo..                "{}},}
+\DoxyCodeLine{1026 \textcolor{stringliteral}{"{}                ..oooooooooooooooooooooooooooo..                "{}},}
+\DoxyCodeLine{1027 \textcolor{stringliteral}{"{}                ..oooooooooooooooooooooooooooo..                "{}},}
+\DoxyCodeLine{1028 \textcolor{stringliteral}{"{}                ..oooooooooooooooooooooooooooo..                "{}},}
+\DoxyCodeLine{1029 \textcolor{stringliteral}{"{}                ..oooooooooooooooooooooooooooo..                "{}},}
+\DoxyCodeLine{1030 \textcolor{stringliteral}{"{}                  ............................                  "{}},}
+\DoxyCodeLine{1031 \textcolor{stringliteral}{"{}                  ............................                  "{}}}
+\DoxyCodeLine{1032 \};}
+\DoxyCodeLine{1033 }
+\DoxyCodeLine{1034 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} gajo1[] = \{}
+\DoxyCodeLine{1035 \textcolor{stringliteral}{"{}64 96 6 1 "{}},}
+\DoxyCodeLine{1036 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{1037 \textcolor{stringliteral}{"{}. c \#000001"{}},}
+\DoxyCodeLine{1038 \textcolor{stringliteral}{"{}X c \#FF6A00"{}},}
+\DoxyCodeLine{1039 \textcolor{stringliteral}{"{}o c \#7F3300"{}},}
+\DoxyCodeLine{1040 \textcolor{stringliteral}{"{}O c \#00FFFF"{}},}
+\DoxyCodeLine{1041 \textcolor{stringliteral}{"{}+ c \#FFE97F"{}},}
+\DoxyCodeLine{1042 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{1043 \textcolor{stringliteral}{"{}                ................................                "{}},}
+\DoxyCodeLine{1044 \textcolor{stringliteral}{"{}                ................................                "{}},}
+\DoxyCodeLine{1045 \textcolor{stringliteral}{"{}            ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....            "{}},}
+\DoxyCodeLine{1046 \textcolor{stringliteral}{"{}            ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....            "{}},}
+\DoxyCodeLine{1047 \textcolor{stringliteral}{"{}        ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....        "{}},}
+\DoxyCodeLine{1048 \textcolor{stringliteral}{"{}        ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....        "{}},}
+\DoxyCodeLine{1049 \textcolor{stringliteral}{"{}      ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..      "{}},}
+\DoxyCodeLine{1050 \textcolor{stringliteral}{"{}      ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..      "{}},}
+\DoxyCodeLine{1051 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{1052 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{1053 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{1054 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{1055 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1056 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1057 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1058 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1059 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1060 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1061 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1062 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1063 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1064 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1065 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1066 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1067 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1068 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1069 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1070 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1071 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1072 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1073 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1074 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1075 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1076 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1077 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1078 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1079 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1080 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1081 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1082 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1083 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1084 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1085 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1086 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1087 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1088 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1089 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1090 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1091 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1092 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1093 \textcolor{stringliteral}{"{}  ..........XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..........  "{}},}
+\DoxyCodeLine{1094 \textcolor{stringliteral}{"{}  ..........XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..........  "{}},}
+\DoxyCodeLine{1095 \textcolor{stringliteral}{"{}..oooooooooo........................................oooooooooo.."{}},}
+\DoxyCodeLine{1096 \textcolor{stringliteral}{"{}..oooooooooo........................................oooooooooo.."{}},}
+\DoxyCodeLine{1097 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1098 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1099 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1100 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1101 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1102 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1103 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1104 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1105 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1106 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1107 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1108 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1109 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1110 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1111 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1112 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1113 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1114 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1115 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1116 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1117 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1118 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1119 \textcolor{stringliteral}{"{}  ................OOOOOOOOOOOOOOOOOOOOOOOOOOOO................  "{}},}
+\DoxyCodeLine{1120 \textcolor{stringliteral}{"{}  ................OOOOOOOOOOOOOOOOOOOOOOOOOOOO................  "{}},}
+\DoxyCodeLine{1121 \textcolor{stringliteral}{"{}                ..OO++OOOOOO++OOOOOO++OOOOOO++OO..              "{}},}
+\DoxyCodeLine{1122 \textcolor{stringliteral}{"{}                ..OO++OOOOOO++OOOOOO++OOOOOO++OO..              "{}},}
+\DoxyCodeLine{1123 \textcolor{stringliteral}{"{}                ..OOOOOO++OOOOOO++OOOOOO++OOOOOO..              "{}},}
+\DoxyCodeLine{1124 \textcolor{stringliteral}{"{}                ..OOOOOO++OOOOOO++OOOOOO++OOOOOO..              "{}},}
+\DoxyCodeLine{1125 \textcolor{stringliteral}{"{}                ..OO++OOOOOO++OOOOOO++OOOOOO++OO..              "{}},}
+\DoxyCodeLine{1126 \textcolor{stringliteral}{"{}                ..OO++OOOOOO++OOOOOO++OOOOOO++OO..              "{}},}
+\DoxyCodeLine{1127 \textcolor{stringliteral}{"{}                ..OOOOOOOOOOOOOO....OOOOOOOOOOOO..              "{}},}
+\DoxyCodeLine{1128 \textcolor{stringliteral}{"{}                ..OOOOOOOOOOOOOO....OOOOOOOOOOOO..              "{}},}
+\DoxyCodeLine{1129 \textcolor{stringliteral}{"{}                ..oooooooooooo..  ..oooooooooooo..              "{}},}
+\DoxyCodeLine{1130 \textcolor{stringliteral}{"{}                ..oooooooooooo..  ..oooooooooooo..              "{}},}
+\DoxyCodeLine{1131 \textcolor{stringliteral}{"{}                ..oooooooooooo..  ..oooooooooooo..              "{}},}
+\DoxyCodeLine{1132 \textcolor{stringliteral}{"{}                ..oooooooooooo..  ..oooooooooooo..              "{}},}
+\DoxyCodeLine{1133 \textcolor{stringliteral}{"{}                ..oooooooooooo..  ..oooooooooooo..              "{}},}
+\DoxyCodeLine{1134 \textcolor{stringliteral}{"{}                ..oooooooooooo..  ..oooooooooooo..              "{}},}
+\DoxyCodeLine{1135 \textcolor{stringliteral}{"{}                ..oooooooooooo..    ............                "{}},}
+\DoxyCodeLine{1136 \textcolor{stringliteral}{"{}                ..oooooooooooo..    ............                "{}},}
+\DoxyCodeLine{1137 \textcolor{stringliteral}{"{}                  ............                                  "{}},}
+\DoxyCodeLine{1138 \textcolor{stringliteral}{"{}                  ............                                  "{}}}
+\DoxyCodeLine{1139 \};}
+\DoxyCodeLine{1140 }
+\DoxyCodeLine{1141 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} gajo2[] = \{}
+\DoxyCodeLine{1142 \textcolor{stringliteral}{"{}64 96 6 1 "{}},}
+\DoxyCodeLine{1143 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{1144 \textcolor{stringliteral}{"{}. c \#000001"{}},}
+\DoxyCodeLine{1145 \textcolor{stringliteral}{"{}X c \#FF6A00"{}},}
+\DoxyCodeLine{1146 \textcolor{stringliteral}{"{}o c \#7F3300"{}},}
+\DoxyCodeLine{1147 \textcolor{stringliteral}{"{}O c \#00FFFF"{}},}
+\DoxyCodeLine{1148 \textcolor{stringliteral}{"{}+ c \#FFE97F"{}},}
+\DoxyCodeLine{1149 \textcolor{comment}{/* pixels */}}
+\DoxyCodeLine{1150 \textcolor{stringliteral}{"{}                ................................                "{}},}
+\DoxyCodeLine{1151 \textcolor{stringliteral}{"{}                ................................                "{}},}
+\DoxyCodeLine{1152 \textcolor{stringliteral}{"{}            ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....            "{}},}
+\DoxyCodeLine{1153 \textcolor{stringliteral}{"{}            ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....            "{}},}
+\DoxyCodeLine{1154 \textcolor{stringliteral}{"{}        ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....        "{}},}
+\DoxyCodeLine{1155 \textcolor{stringliteral}{"{}        ....XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....        "{}},}
+\DoxyCodeLine{1156 \textcolor{stringliteral}{"{}      ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..      "{}},}
+\DoxyCodeLine{1157 \textcolor{stringliteral}{"{}      ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..      "{}},}
+\DoxyCodeLine{1158 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{1159 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{1160 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{1161 \textcolor{stringliteral}{"{}    ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..    "{}},}
+\DoxyCodeLine{1162 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1163 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1164 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1165 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1166 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1167 \textcolor{stringliteral}{"{}  ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..  "{}},}
+\DoxyCodeLine{1168 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1169 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1170 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1171 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1172 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1173 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1174 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1175 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1176 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1177 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1178 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1179 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1180 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1181 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1182 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1183 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1184 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1185 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1186 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1187 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1188 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1189 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1190 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1191 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1192 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1193 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1194 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1195 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1196 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1197 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1198 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1199 \textcolor{stringliteral}{"{}..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.."{}},}
+\DoxyCodeLine{1200 \textcolor{stringliteral}{"{}  ..........XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..........  "{}},}
+\DoxyCodeLine{1201 \textcolor{stringliteral}{"{}  ..........XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..........  "{}},}
+\DoxyCodeLine{1202 \textcolor{stringliteral}{"{}..oooooooooo........................................oooooooooo.."{}},}
+\DoxyCodeLine{1203 \textcolor{stringliteral}{"{}..oooooooooo........................................oooooooooo.."{}},}
+\DoxyCodeLine{1204 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1205 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1206 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1207 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1208 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1209 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1210 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1211 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1212 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1213 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1214 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1215 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1216 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1217 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1218 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1219 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1220 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1221 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1222 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1223 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1224 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1225 \textcolor{stringliteral}{"{}..oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.."{}},}
+\DoxyCodeLine{1226 \textcolor{stringliteral}{"{}  ................OOOOOOOOOOOOOOOOOOOOOOOOOOOO................  "{}},}
+\DoxyCodeLine{1227 \textcolor{stringliteral}{"{}  ................OOOOOOOOOOOOOOOOOOOOOOOOOOOO................  "{}},}
+\DoxyCodeLine{1228 \textcolor{stringliteral}{"{}              ..OOOO++OOOOOO++OOOOOO++OOOOOO++..                "{}},}
+\DoxyCodeLine{1229 \textcolor{stringliteral}{"{}              ..OOOO++OOOOOO++OOOOOO++OOOOOO++..                "{}},}
+\DoxyCodeLine{1230 \textcolor{stringliteral}{"{}              ..++OOOOOO++OOOOOO++OOOOOO++OOOO..                "{}},}
+\DoxyCodeLine{1231 \textcolor{stringliteral}{"{}              ..++OOOOOO++OOOOOO++OOOOOO++OOOO..                "{}},}
+\DoxyCodeLine{1232 \textcolor{stringliteral}{"{}              ..OOOO++OOOOOO++OOOOOO++OOOOOO++..                "{}},}
+\DoxyCodeLine{1233 \textcolor{stringliteral}{"{}              ..OOOO++OOOOOO++OOOOOO++OOOOOO++..                "{}},}
+\DoxyCodeLine{1234 \textcolor{stringliteral}{"{}              ..OOOOOOOOOOOO....OOOOOOOOOOOOOO..                "{}},}
+\DoxyCodeLine{1235 \textcolor{stringliteral}{"{}              ..OOOOOOOOOOOO....OOOOOOOOOOOOOO..                "{}},}
+\DoxyCodeLine{1236 \textcolor{stringliteral}{"{}              ..oooooooooooo..  ..oooooooooooo..                "{}},}
+\DoxyCodeLine{1237 \textcolor{stringliteral}{"{}              ..oooooooooooo..  ..oooooooooooo..                "{}},}
+\DoxyCodeLine{1238 \textcolor{stringliteral}{"{}              ..oooooooooooo..  ..oooooooooooo..                "{}},}
+\DoxyCodeLine{1239 \textcolor{stringliteral}{"{}              ..oooooooooooo..  ..oooooooooooo..                "{}},}
+\DoxyCodeLine{1240 \textcolor{stringliteral}{"{}              ..oooooooooooo..  ..oooooooooooo..                "{}},}
+\DoxyCodeLine{1241 \textcolor{stringliteral}{"{}              ..oooooooooooo..  ..oooooooooooo..                "{}},}
+\DoxyCodeLine{1242 \textcolor{stringliteral}{"{}                ............    ..oooooooooooo..                "{}},}
+\DoxyCodeLine{1243 \textcolor{stringliteral}{"{}                ............    ..oooooooooooo..                "{}},}
+\DoxyCodeLine{1244 \textcolor{stringliteral}{"{}                                  ............                  "{}},}
+\DoxyCodeLine{1245 \textcolor{stringliteral}{"{}                                  ............                  "{}}}
+\DoxyCodeLine{1246 \};}
+\DoxyCodeLine{1247 }
+\DoxyCodeLine{1248 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} game\_over[] = \{}
+\DoxyCodeLine{1249 \textcolor{stringliteral}{"{}344 40 2 1"{}},}
+\DoxyCodeLine{1250 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{1251 \textcolor{stringliteral}{"{}. c \#FF0000"{}},}
+\DoxyCodeLine{1252 \textcolor{stringliteral}{"{}        ................                        ................                ........                        ........        ................................                                ................                ........                        ........        ................................        ........................        "{}},}
+\DoxyCodeLine{1253 \textcolor{stringliteral}{"{}        ................                        ................                ........                        ........        ................................                                ................                ........                        ........        ................................        ........................        "{}},}
+\DoxyCodeLine{1254 \textcolor{stringliteral}{"{}        ................                        ................                ........                        ........        ................................                                ................                ........                        ........        ................................        ........................        "{}},}
+\DoxyCodeLine{1255 \textcolor{stringliteral}{"{}        ................                        ................                ........                        ........        ................................                                ................                ........                        ........        ................................        ........................        "{}},}
+\DoxyCodeLine{1256 \textcolor{stringliteral}{"{}        ................                        ................                ........                        ........        ................................                                ................                ........                        ........        ................................        ........................        "{}},}
+\DoxyCodeLine{1257 \textcolor{stringliteral}{"{}        ................                        ................                ........                        ........        ................................                                ................                ........                        ........        ................................        ........................        "{}},}
+\DoxyCodeLine{1258 \textcolor{stringliteral}{"{}        ................                        ................                ........                        ........        ................................                                ................                ........                        ........        ................................        ........................        "{}},}
+\DoxyCodeLine{1259 \textcolor{stringliteral}{"{}        ................                        ................                ........                        ........        ................................                                ................                ........                        ........        ................................        ........................        "{}},}
+\DoxyCodeLine{1260 \textcolor{stringliteral}{"{}........                                ........                ........        ................        ................        ........                                                ........                ........        ........                        ........        ........                                ........                ........"{}},}
+\DoxyCodeLine{1261 \textcolor{stringliteral}{"{}........                                ........                ........        ................        ................        ........                                                ........                ........        ........                        ........        ........                                ........                ........"{}},}
+\DoxyCodeLine{1262 \textcolor{stringliteral}{"{}........                                ........                ........        ................        ................        ........                                                ........                ........        ........                        ........        ........                                ........                ........"{}},}
+\DoxyCodeLine{1263 \textcolor{stringliteral}{"{}........                                ........                ........        ................        ................        ........                                                ........                ........        ........                        ........        ........                                ........                ........"{}},}
+\DoxyCodeLine{1264 \textcolor{stringliteral}{"{}........                                ........                ........        ................        ................        ........                                                ........                ........        ........                        ........        ........                                ........                ........"{}},}
+\DoxyCodeLine{1265 \textcolor{stringliteral}{"{}........                                ........                ........        ................        ................        ........                                                ........                ........        ........                        ........        ........                                ........                ........"{}},}
+\DoxyCodeLine{1266 \textcolor{stringliteral}{"{}........                                ........                ........        ................        ................        ........                                                ........                ........        ........                        ........        ........                                ........                ........"{}},}
+\DoxyCodeLine{1267 \textcolor{stringliteral}{"{}........                                ........                ........        ................        ................        ........                                                ........                ........        ........                        ........        ........                                ........                ........"{}},}
+\DoxyCodeLine{1268 \textcolor{stringliteral}{"{}........        ................        ................................        ........        ........        ........        ........................                                ........                ........                ........        ........                ........................                ........................        "{}},}
+\DoxyCodeLine{1269 \textcolor{stringliteral}{"{}........        ................        ................................        ........        ........        ........        ........................                                ........                ........                ........        ........                ........................                ........................        "{}},}
+\DoxyCodeLine{1270 \textcolor{stringliteral}{"{}........        ................        ................................        ........        ........        ........        ........................                                ........                ........                ........        ........                ........................                ........................        "{}},}
+\DoxyCodeLine{1271 \textcolor{stringliteral}{"{}........        ................        ................................        ........        ........        ........        ........................                                ........                ........                ........        ........                ........................                ........................        "{}},}
+\DoxyCodeLine{1272 \textcolor{stringliteral}{"{}........        ................        ................................        ........        ........        ........        ........................                                ........                ........                ........        ........                ........................                ........................        "{}},}
+\DoxyCodeLine{1273 \textcolor{stringliteral}{"{}........        ................        ................................        ........        ........        ........        ........................                                ........                ........                ........        ........                ........................                ........................        "{}},}
+\DoxyCodeLine{1274 \textcolor{stringliteral}{"{}........        ................        ................................        ........        ........        ........        ........................                                ........                ........                ........        ........                ........................                ........................        "{}},}
+\DoxyCodeLine{1275 \textcolor{stringliteral}{"{}........        ................        ................................        ........        ........        ........        ........................                                ........                ........                ........        ........                ........................                ........................        "{}},}
+\DoxyCodeLine{1276 \textcolor{stringliteral}{"{}........                ........        ........                ........        ........                        ........        ........                                                ........                ........                ........        ........                ........                                ........        ........        "{}},}
+\DoxyCodeLine{1277 \textcolor{stringliteral}{"{}........                ........        ........                ........        ........                        ........        ........                                                ........                ........                ........        ........                ........                                ........        ........        "{}},}
+\DoxyCodeLine{1278 \textcolor{stringliteral}{"{}........                ........        ........                ........        ........                        ........        ........                                                ........                ........                ........        ........                ........                                ........        ........        "{}},}
+\DoxyCodeLine{1279 \textcolor{stringliteral}{"{}........                ........        ........                ........        ........                        ........        ........                                                ........                ........                ........        ........                ........                                ........        ........        "{}},}
+\DoxyCodeLine{1280 \textcolor{stringliteral}{"{}........                ........        ........                ........        ........                        ........        ........                                                ........                ........                ........        ........                ........                                ........        ........        "{}},}
+\DoxyCodeLine{1281 \textcolor{stringliteral}{"{}........                ........        ........                ........        ........                        ........        ........                                                ........                ........                ........        ........                ........                                ........        ........        "{}},}
+\DoxyCodeLine{1282 \textcolor{stringliteral}{"{}........                ........        ........                ........        ........                        ........        ........                                                ........                ........                ........        ........                ........                                ........        ........        "{}},}
+\DoxyCodeLine{1283 \textcolor{stringliteral}{"{}........                ........        ........                ........        ........                        ........        ........                                                ........                ........                ........        ........                ........                                ........        ........        "{}},}
+\DoxyCodeLine{1284 \textcolor{stringliteral}{"{}        ................                ........                ........        ........                        ........        ................................                                ................                                ........                        ................................        ........                ........"{}},}
+\DoxyCodeLine{1285 \textcolor{stringliteral}{"{}        ................                ........                ........        ........                        ........        ................................                                ................                                ........                        ................................        ........                ........"{}},}
+\DoxyCodeLine{1286 \textcolor{stringliteral}{"{}        ................                ........                ........        ........                        ........        ................................                                ................                                ........                        ................................        ........                ........"{}},}
+\DoxyCodeLine{1287 \textcolor{stringliteral}{"{}        ................                ........                ........        ........                        ........        ................................                                ................                                ........                        ................................        ........                ........"{}},}
+\DoxyCodeLine{1288 \textcolor{stringliteral}{"{}        ................                ........                ........        ........                        ........        ................................                                ................                                ........                        ................................        ........                ........"{}},}
+\DoxyCodeLine{1289 \textcolor{stringliteral}{"{}        ................                ........                ........        ........                        ........        ................................                                ................                                ........                        ................................        ........                ........"{}},}
+\DoxyCodeLine{1290 \textcolor{stringliteral}{"{}        ................                ........                ........        ........                        ........        ................................                                ................                                ........                        ................................        ........                ........"{}},}
+\DoxyCodeLine{1291 \textcolor{stringliteral}{"{}        ................                ........                ........        ........                        ........        ................................                                ................                                ........                        ................................        ........                ........"{}}}
+\DoxyCodeLine{1292 \};}
+\DoxyCodeLine{1293 }
+\DoxyCodeLine{1294 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} start[] = \{}
+\DoxyCodeLine{1295 }
+\DoxyCodeLine{1296 \textcolor{stringliteral}{"{}208 40 2 1"{}},}
+\DoxyCodeLine{1297 \textcolor{stringliteral}{"{}  c \#000000"{}},}
+\DoxyCodeLine{1298 \textcolor{stringliteral}{"{}. c \#FF0000"{}},}
+\DoxyCodeLine{1299 \textcolor{stringliteral}{"{}        ........................        ........................................                ................                ........................                ........................................"{}},}
+\DoxyCodeLine{1300 \textcolor{stringliteral}{"{}        ........................        ........................................                ................                ........................                ........................................"{}},}
+\DoxyCodeLine{1301 \textcolor{stringliteral}{"{}        ........................        ........................................                ................                ........................                ........................................"{}},}
+\DoxyCodeLine{1302 \textcolor{stringliteral}{"{}        ........................        ........................................                ................                ........................                ........................................"{}},}
+\DoxyCodeLine{1303 \textcolor{stringliteral}{"{}        ........................        ........................................                ................                ........................                ........................................"{}},}
+\DoxyCodeLine{1304 \textcolor{stringliteral}{"{}        ........................        ........................................                ................                ........................                ........................................"{}},}
+\DoxyCodeLine{1305 \textcolor{stringliteral}{"{}        ........................        ........................................                ................                ........................                ........................................"{}},}
+\DoxyCodeLine{1306 \textcolor{stringliteral}{"{}        ........................        ........................................                ................                ........................                ........................................"{}},}
+\DoxyCodeLine{1307 \textcolor{stringliteral}{"{}........                                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1308 \textcolor{stringliteral}{"{}........                                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1309 \textcolor{stringliteral}{"{}........                                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1310 \textcolor{stringliteral}{"{}........                                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1311 \textcolor{stringliteral}{"{}........                                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1312 \textcolor{stringliteral}{"{}........                                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1313 \textcolor{stringliteral}{"{}........                                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1314 \textcolor{stringliteral}{"{}........                                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1315 \textcolor{stringliteral}{"{}        ................                                ........                        ................................        ........................                                ........                "{}},}
+\DoxyCodeLine{1316 \textcolor{stringliteral}{"{}        ................                                ........                        ................................        ........................                                ........                "{}},}
+\DoxyCodeLine{1317 \textcolor{stringliteral}{"{}        ................                                ........                        ................................        ........................                                ........                "{}},}
+\DoxyCodeLine{1318 \textcolor{stringliteral}{"{}        ................                                ........                        ................................        ........................                                ........                "{}},}
+\DoxyCodeLine{1319 \textcolor{stringliteral}{"{}        ................                                ........                        ................................        ........................                                ........                "{}},}
+\DoxyCodeLine{1320 \textcolor{stringliteral}{"{}        ................                                ........                        ................................        ........................                                ........                "{}},}
+\DoxyCodeLine{1321 \textcolor{stringliteral}{"{}        ................                                ........                        ................................        ........................                                ........                "{}},}
+\DoxyCodeLine{1322 \textcolor{stringliteral}{"{}        ................                                ........                        ................................        ........................                                ........                "{}},}
+\DoxyCodeLine{1323 \textcolor{stringliteral}{"{}                        ........                        ........                        ........                ........        ........        ........                                ........                "{}},}
+\DoxyCodeLine{1324 \textcolor{stringliteral}{"{}                        ........                        ........                        ........                ........        ........        ........                                ........                "{}},}
+\DoxyCodeLine{1325 \textcolor{stringliteral}{"{}                        ........                        ........                        ........                ........        ........        ........                                ........                "{}},}
+\DoxyCodeLine{1326 \textcolor{stringliteral}{"{}                        ........                        ........                        ........                ........        ........        ........                                ........                "{}},}
+\DoxyCodeLine{1327 \textcolor{stringliteral}{"{}                        ........                        ........                        ........                ........        ........        ........                                ........                "{}},}
+\DoxyCodeLine{1328 \textcolor{stringliteral}{"{}                        ........                        ........                        ........                ........        ........        ........                                ........                "{}},}
+\DoxyCodeLine{1329 \textcolor{stringliteral}{"{}                        ........                        ........                        ........                ........        ........        ........                                ........                "{}},}
+\DoxyCodeLine{1330 \textcolor{stringliteral}{"{}                        ........                        ........                        ........                ........        ........        ........                                ........                "{}},}
+\DoxyCodeLine{1331 \textcolor{stringliteral}{"{}........................                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1332 \textcolor{stringliteral}{"{}........................                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1333 \textcolor{stringliteral}{"{}........................                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1334 \textcolor{stringliteral}{"{}........................                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1335 \textcolor{stringliteral}{"{}........................                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1336 \textcolor{stringliteral}{"{}........................                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1337 \textcolor{stringliteral}{"{}........................                                ........                        ........                ........        ........                ........                        ........                "{}},}
+\DoxyCodeLine{1338 \textcolor{stringliteral}{"{}........................                                ........                        ........                ........        ........                ........                        ........                "{}}}
+\DoxyCodeLine{1339 \};}
+\DoxyCodeLine{1340 }
+\DoxyCodeLine{1341 }
+\DoxyCodeLine{1342 \textcolor{keyword}{static} xpm\_row\_t \textcolor{keyword}{const} play2[] = \{}
+\DoxyCodeLine{1343     \textcolor{stringliteral}{"{}200 75 20 1"{}},}
+\DoxyCodeLine{1344 \textcolor{stringliteral}{"{}   c None"{}},}
+\DoxyCodeLine{1345 \textcolor{stringliteral}{"{}.  c \#000000"{}},}
+\DoxyCodeLine{1346 \textcolor{stringliteral}{"{}+  c \#FFE162"{}},}
+\DoxyCodeLine{1347 \textcolor{stringliteral}{"{}@  c \#101010"{}},}
+\DoxyCodeLine{1348 \textcolor{stringliteral}{"{}\#  c \#0F0F0F"{}},}
+\DoxyCodeLine{1349 \textcolor{stringliteral}{"{}\$  c \#242424"{}},}
+\DoxyCodeLine{1350 \textcolor{stringliteral}{"{}\%  c \#030303"{}},}
+\DoxyCodeLine{1351 \textcolor{stringliteral}{"{}\&  c \#060606"{}},}
+\DoxyCodeLine{1352 \textcolor{stringliteral}{"{}*  c \#010101"{}},}
+\DoxyCodeLine{1353 \textcolor{stringliteral}{"{}=  c \#0D0D0D"{}},}
+\DoxyCodeLine{1354 \textcolor{stringliteral}{"{}-\/  c \#0E0E0E"{}},}
+\DoxyCodeLine{1355 \textcolor{stringliteral}{"{};  c \#040404"{}},}
+\DoxyCodeLine{1356 \textcolor{stringliteral}{"{}>  c \#0A0A0A"{}},}
+\DoxyCodeLine{1357 \textcolor{stringliteral}{"{},  c \#090909"{}},}
+\DoxyCodeLine{1358 \textcolor{stringliteral}{"{}'  c \#333333"{}},}
+\DoxyCodeLine{1359 \textcolor{stringliteral}{"{})  c \#0B0B0B"{}},}
+\DoxyCodeLine{1360 \textcolor{stringliteral}{"{}!  c \#070707"{}},}
+\DoxyCodeLine{1361 \textcolor{stringliteral}{"{}\string~  c \#111111"{}},}
+\DoxyCodeLine{1362 \textcolor{stringliteral}{"{}\{  c \#121212"{}},}
+\DoxyCodeLine{1363 \textcolor{stringliteral}{"{}]  c \#131313"{}},}
+\DoxyCodeLine{1364 \textcolor{stringliteral}{"{}      ......................                   ..........                                                                                         ..........                             ..........     "{}},}
+\DoxyCodeLine{1365 \textcolor{stringliteral}{"{}    ...........................              ..............                                                                                     ..............                         ..............   "{}},}
+\DoxyCodeLine{1366 \textcolor{stringliteral}{"{}  ...............................           ................                                                                                   ................                        ...............  "{}},}
+\DoxyCodeLine{1367 \textcolor{stringliteral}{"{}  ................................          ................                                                            .........              .................                      ................. "{}},}
+\DoxyCodeLine{1368 \textcolor{stringliteral}{"{} ...................................       ..................                                                         .............           ..................                      ................. "{}},}
+\DoxyCodeLine{1369 \textcolor{stringliteral}{"{} .......   +++++++++++++ @...........      ...... ++++\#......                                                        ...............          ......\$++++ .......                    ......\% +++ ......."{}},}
+\DoxyCodeLine{1370 \textcolor{stringliteral}{"{}......\&++++++++++++++++++++ *..........   ...... ++++++\&.....                                                       .................         .....\$++++++ .......                   ......+++++++......"{}},}
+\DoxyCodeLine{1371 \textcolor{stringliteral}{"{}...... ++++++++++++++++++++++ ..........  ......+++++++ .....                                                       .................         .....++++++++\#......                  ...... +++++++ ....."{}},}
+\DoxyCodeLine{1372 \textcolor{stringliteral}{"{}.....*+++++++++++++++++++++++++ ......... ..... ++++++++.....                                                      .......=+++ .......        .....+++++++++.......                 ......++++++++ ....."{}},}
+\DoxyCodeLine{1373 \textcolor{stringliteral}{"{}..... ++++++++++++++++++++++++++ ........ ..... ++++++++.....                                                     .......-\/+++++ ......        .....+++++++++ .......               ...... ++++++++ ....."{}},}
+\DoxyCodeLine{1374 \textcolor{stringliteral}{"{}..... ++++++++++++++++++++++++++++;............ ++++++++.....                                                    .......;+++++++ .....        .....++++++++++>......               ......+++++++++ ....."{}},}
+\DoxyCodeLine{1375 \textcolor{stringliteral}{"{}..... +++++++++++++++++++++++++++++,........... ++++++++.....                                                    .......++++++++ ......       ..... ++++++++++.......             ...... +++++++++......"{}},}
+\DoxyCodeLine{1376 \textcolor{stringliteral}{"{}..... ++++++++++++++++++++++++++++++\%.......... ++++++++.....                                                   ....... +++++++++......       ...... +++++++++ .......            ......+++++++++ ......"{}},}
+\DoxyCodeLine{1377 \textcolor{stringliteral}{"{}..... +++++++  '>\%\&   +++++++++++++++.......... ++++++++.....                                                  ....... ++++++++++*.....       ......\%++++++++++)......           ...... +++++++++!..... "{}},}
+\DoxyCodeLine{1378 \textcolor{stringliteral}{"{}..... +++++++........... ++++++++++++ ......... ++++++++.....                                                 .......@+++++++++++ .....        ...... ++++++++++.......          ......+++++++++ ...... "{}},}
+\DoxyCodeLine{1379 \textcolor{stringliteral}{"{}..... +++++++............. +++++++++++,........ ++++++++.....                                                 .......++++++++++++ .....        ....... +++++++++ .......        ...... +++++++++....... "{}},}
+\DoxyCodeLine{1380 \textcolor{stringliteral}{"{}..... +++++++............... +++++++++ ........ ++++++++.....                                                ....... +++++++++++++.....         ......;++++++++++=......        ......+++++++++ ......  "{}},}
+\DoxyCodeLine{1381 \textcolor{stringliteral}{"{}..... +++++++................ +++++++++........ ++++++++.....                                               ....... ++++++++++++++......        ....... ++++++++++.......      ...... +++++++++.......  "{}},}
+\DoxyCodeLine{1382 \textcolor{stringliteral}{"{}..... +++++++................. ++++++++ ....... ++++++++.....                                               ......*+++++++++++++++......         ....... +++++++++ ......      ......+++++++++ ......   "{}},}
+\DoxyCodeLine{1383 \textcolor{stringliteral}{"{}..... +++++++.....    ......... +++++++ ....... ++++++++.....                                              ....... +++++++++++++++ .....          ......;++++++++++\&......     .....\string~+++++++++......    "{}},}
+\DoxyCodeLine{1384 \textcolor{stringliteral}{"{}..... +++++++.....      .......\%++++++++....... ++++++++.....                                              ...... ++++++++++++++++ .....          ....... +++++++++ ......    ...... ++++++++ ......    "{}},}
+\DoxyCodeLine{1385 \textcolor{stringliteral}{"{}.....++++++++.....       .......++++++++....... ++++++++.....                                             ......*+++++++++++++++++ .....           ....... +++++++++ ......   ......+++++++++\%.....     "{}},}
+\DoxyCodeLine{1386 \textcolor{stringliteral}{"{}.....++++++++.....        ......++++++++....... ++++++++.....                                            ....... +++++++++ ++++++++......           ......\%++++++++++......  ...... ++++++++ ......     "{}},}
+\DoxyCodeLine{1387 \textcolor{stringliteral}{"{}.....++++++++.....         .....++++++++....... ++++++++.....                                            ...... +++++++++  ++++++++......           ....... +++++++++ ...... ......+++++++++ ......     "{}},}
+\DoxyCodeLine{1388 \textcolor{stringliteral}{"{}.....++++++++.....        ......++++++++....... ++++++++.....                                           .......++++++++++..++++++++\$.....            .......++++++++++............ +++++++++......      "{}},}
+\DoxyCodeLine{1389 \textcolor{stringliteral}{"{}.....++++++++.....       .......++++++++....... ++++++++.....                                          ....... +++++++++ ..++++++++ .....             ......)+++++++++ ........... ++++++++ ......      "{}},}
+\DoxyCodeLine{1390 \textcolor{stringliteral}{"{}.....+++++++ .....      ....... +++++++ ....... ++++++++.....                                          ...... +++++++++ ... +++++++ .....             ....... +++++++++..........;+++++++++*.....       "{}},}
+\DoxyCodeLine{1391 \textcolor{stringliteral}{"{}.....+++++++ .....     ........++++++++ ....... +++++++ .....                                         .......++++++++++.... ++++++++......             .......+++++++++ ......... ++++++++ ......       "{}},}
+\DoxyCodeLine{1392 \textcolor{stringliteral}{"{}.....+++++++ .....   ......... ++++++++*....... +++++++ .....                                        ....... +++++++++ ....-\/++++++++......              ...... +++++++++.........+++++++++ ......       "{}},}
+\DoxyCodeLine{1393 \textcolor{stringliteral}{"{}.....+++++++ ................)+++++++++........ +++++++ .....                                        ......=+++++++++ ......++++++++ .....              .......+++++++++ ....... +++++++++......        "{}},}
+\DoxyCodeLine{1394 \textcolor{stringliteral}{"{}.....+++++++ ...............=+++++++++ ........ +++++++ .....                                       .......++++++++++*......++++++++ .....               ...... +++++++++.......+++++++++ ......        "{}},}
+\DoxyCodeLine{1395 \textcolor{stringliteral}{"{}....\{+++++++ .............. ++++++++++......... +++++++ .....                                       ...... +++++++++ ....... ++++++++......               ......+++++++++ .....\#+++++++++......         "{}},}
+\DoxyCodeLine{1396 \textcolor{stringliteral}{"{}.... +++++++ ............@+++++++++++ .........++++++++ .....                                      ......*+++++++++ ........ ++++++++......               ...... +++++++++..... ++++++++ ......         "{}},}
+\DoxyCodeLine{1397 \textcolor{stringliteral}{"{}.... +++++++-\/.......... +++++++++++++..........++++++++ .....                                      ...... +++++++++;.........++++++++).....                .....\&+++++++++ ....+++++++++\$.....          "{}},}
+\DoxyCodeLine{1398 \textcolor{stringliteral}{"{}.... +++++++    \&'   +++++++++++++++!..........++++++++ .....                                     ......\$+++++++++ ..........++++++++ .....                ...... +++++++++].. +++++++++......          "{}},}
+\DoxyCodeLine{1399 \textcolor{stringliteral}{"{}.... ++++++++++++++++++++++++++++++ ...........++++++++ .....                                    .......++++++++++........... +++++++ .....                ......*++++++++++..+++++++++ ......          "{}},}
+\DoxyCodeLine{1400 \textcolor{stringliteral}{"{}.... +++++++++++++++++++++++++++++ ............++++++++ .....                                   ....... +++++++++,.......>  ++++++++++......                ...... +++++++++  +++++++++......           "{}},}
+\DoxyCodeLine{1401 \textcolor{stringliteral}{"{}.... ++++++++++++++++++++++++++++]....... .....++++++++ .....                                 .........+++++++++ ...   +++++++++++++++......                .......+++++++++++++++++++ ......           "{}},}
+\DoxyCodeLine{1402 \textcolor{stringliteral}{"{}....+++++++++++++++++++++++++++ \%........ .....++++++++ .....                                 ........ +++++++++  ++++++++++++++++++++ .....                 ......\{++++++++++++++++++).....            "{}},}
+\DoxyCodeLine{1403 \textcolor{stringliteral}{"{}....++++++++++++++++++++++++++ .........  .....++++++++ .....                                ........)++++++++++++++++++++++++++++++++ .....                 ....... +++++++++++++++++......            "{}},}
+\DoxyCodeLine{1404 \textcolor{stringliteral}{"{}....++++++++++++++++++++++++ ..........   .....++++++++ .....                                .......;++++++++++++++++++++++++++++++++++......                 .......++++++++++++++++ ......            "{}},}
+\DoxyCodeLine{1405 \textcolor{stringliteral}{"{}....++++++++++++++++++++++ ...........    .....++++++++=.....                               ......; +++++++++++++++++++++++++++++++++++......                  ......=+++++++++++++++......             "{}},}
+\DoxyCodeLine{1406 \textcolor{stringliteral}{"{}....++++++++++++++++++  .............     .....++++++++......                               ......+++++++++++++++++++++++++++++++++++++\&.....                  ....... +++++++++++++ ......             "{}},}
+\DoxyCodeLine{1407 \textcolor{stringliteral}{"{}....+++++++ .......................      ......++++++++......                               ..... +++++++++++++++++++++++++++++++++++++ .....                   ....... ++++++++++++......              "{}},}
+\DoxyCodeLine{1408 \textcolor{stringliteral}{"{}....+++++++ .....................        ......++++++++.....                                ..... +++++++++++++++++++++++++++   +++++++ .....                    .......+++++++++++ ......              "{}},}
+\DoxyCodeLine{1409 \textcolor{stringliteral}{"{}....+++++++ ...................          .....>++++++++.....                                ..... +++++++++++++++++++++++ \#.... ++++++++......                   .......=++++++++++\&.....               "{}},}
+\DoxyCodeLine{1410 \textcolor{stringliteral}{"{}....+++++++ .................            ..... ++++++++.....                                ..... +++++++++++++++++++ )........\#++++++++......                    .......+++++++++ ......               "{}},}
+\DoxyCodeLine{1411 \textcolor{stringliteral}{"{}....+++++++ ..............               ..... ++++++++.....                               ......,+++++++++++++++ =.............++++++++ .....                    ...... +++++++++@......               "{}},}
+\DoxyCodeLine{1412 \textcolor{stringliteral}{"{}....+++++++ .....                        ..... ++++++++.....                               ...... +++++++++++ -\/.................++++++++ .....                    ......++++++++++......                "{}},}
+\DoxyCodeLine{1413 \textcolor{stringliteral}{"{}...!+++++++ .....                        ..... ++++++++.....                               .....\%+++++++++ .....................+++++++++......                  ...... +++++++++ ......                "{}},}
+\DoxyCodeLine{1414 \textcolor{stringliteral}{"{}...=+++++++ .....                        ..... ++++++++.....                              ...... +++++++++*..................... ++++++++......                  ......++++++++++......                 "{}},}
+\DoxyCodeLine{1415 \textcolor{stringliteral}{"{}...\#+++++++ .....                        ..... +++++++ .....                              ......+++++++++ ...............  ..... ++++++++*.....                 ...... +++++++++ ......                 "{}},}
+\DoxyCodeLine{1416 \textcolor{stringliteral}{"{}...@+++++++ .....                        ..... +++++++ .....               ...........   ...... +++++++++]...........      .....*++++++++ ......                ......++++++++++......                  "{}},}
+\DoxyCodeLine{1417 \textcolor{stringliteral}{"{}...@+++++++ .....                        ..... +++++++ .....           ................. ......++++++++++........          ......+++++++++......               ...... +++++++++ ......                  "{}},}
+\DoxyCodeLine{1418 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....++++++++ .....       ........................... +++++++++ ......            ......+++++++++=.....               ......++++++++++......                   "{}},}
+\DoxyCodeLine{1419 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....++++++++ .....  ................................++++++++++......              ..... ++++++++ ......             ...... +++++++++]......                   "{}},}
+\DoxyCodeLine{1420 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....++++++++'......................................=+++++++++ ......              .....'+++++++++......             ......+++++++++ ......                    "{}},}
+\DoxyCodeLine{1421 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....++++++++\%......................  ++++ ......... +++++++++......               ......+++++++++ .....            ...... +++++++++,......                    "{}},}
+\DoxyCodeLine{1422 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....++++++++...................;  ++++++++ ........+++++++++ ......               ...... ++++++++ ......           ......+++++++++ ......                     "{}},}
+\DoxyCodeLine{1423 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....++++++++...............;  +++++++++++++....... +++++++++......                 ..... +++++++++......          ...... +++++++++*......                     "{}},}
+\DoxyCodeLine{1424 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....++++++++..........*  ++++++++++++++++++*...... ++++++++ ......                 ......+++++++++ .....          ......+++++++++ ......                      "{}},}
+\DoxyCodeLine{1425 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....++++++++\%>\string~    ++++++++++++++++++++++++=......+++++++++*.....                  ...... ++++++++ .....         ...... +++++++++.......                      "{}},}
+\DoxyCodeLine{1426 \textcolor{stringliteral}{"{}...@+++++++ .....                        .....+++++++++++++++++++++++++++++++++++++++.......++++++++ ......                   ......++++++++ .....         ......+++++++++ ......                       "{}},}
+\DoxyCodeLine{1427 \textcolor{stringliteral}{"{}...>+++++++ .....                        .....++++++++++++++++++++++++++++++++++++++ ....... +++++++;......                   ...... +++++++ .....         .....\%+++++++++.......                       "{}},}
+\DoxyCodeLine{1428 \textcolor{stringliteral}{"{}....+++++++>.....                        .....+++++++++++++++++++++++++++++++++++++ ........@++++++ ......                     ...... ++++++......         .....;++++++++ ......                        "{}},}
+\DoxyCodeLine{1429 \textcolor{stringliteral}{"{}.... +++++ ......                        .....+++++++++++++++++++++++++++++++++++ ]..........\{++++ .......                     ....... +++ *......         ......++++++++......                         "{}},}
+\DoxyCodeLine{1430 \textcolor{stringliteral}{"{}..... +++ .......                        ..... +++++++++++++++++++++++++++++++  .........................                       .................          ...... ++++++ ......                         "{}},}
+\DoxyCodeLine{1431 \textcolor{stringliteral}{"{}................                         .....*+++++++++++++++++++++++++++  \%............................                       .................           ...... ++++ ......                          "{}},}
+\DoxyCodeLine{1432 \textcolor{stringliteral}{"{}................                         ...... +++++++++++++++++++++  =................................                         ...............            ..................                          "{}},}
+\DoxyCodeLine{1433 \textcolor{stringliteral}{"{}...............                          .......\% ++++++++++++   !.....................  ..............                           ..............             ................                           "{}},}
+\DoxyCodeLine{1434 \textcolor{stringliteral}{"{} .............                            ...........................................      ..........                               ..........               ................                           "{}},}
+\DoxyCodeLine{1435 \textcolor{stringliteral}{"{}   .........                              ........................................                                                                            ..............                            "{}},}
+\DoxyCodeLine{1436 \textcolor{stringliteral}{"{}                                           ....................................                                                                                 ..........                              "{}},}
+\DoxyCodeLine{1437 \textcolor{stringliteral}{"{}                                            ..............................                                                                                                                              "{}},}
+\DoxyCodeLine{1438 \textcolor{stringliteral}{"{}                                              ......................                                                                                                                                    "{}}}
+\DoxyCodeLine{1439 \};}
+\DoxyCodeLine{1440 }
+
+\end{DoxyCode}

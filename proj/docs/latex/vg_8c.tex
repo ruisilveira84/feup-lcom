@@ -1,0 +1,310 @@
+\hypertarget{vg_8c}{}\doxysection{src/vg.c File Reference}
+\label{vg_8c}\index{src/vg.c@{src/vg.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vg.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$() \mbox{\hyperlink{vg_8c_afa0e432c3ebeefc29a59abc4d22918df}{vg\+\_\+init}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initializes video mode. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{vg_8c_a78d147fc7fb3c4f1a4b9dcf8c585b032}{map\+\_\+vram}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Maps vram. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{vg_8c_a08c498ffeb0a3962e3b7711b57397741}{vg\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel in the buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{vg_8c_a8e70ce5e5caeabf6121dff1387870bbd}{vg\+\_\+draw\+\_\+pixel\+\_\+to\+\_\+background}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel in the background buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{vg_8c_a1677f4b59f9e0584d82e0b655e4b7fc9}{vg\+\_\+draw\+\_\+hline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a line in the buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{vg_8c_a99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel. \end{DoxyCompactList}\item 
+uint32\+\_\+t() \mbox{\hyperlink{vg_8c_a3b0ee3706bd0c5bd06c24cd519b26f39}{R}} (uint32\+\_\+t first)
+\item 
+uint32\+\_\+t() \mbox{\hyperlink{vg_8c_a34103732d16ab1b6ad266f756d0ec569}{G}} (uint32\+\_\+t first)
+\item 
+uint32\+\_\+t() \mbox{\hyperlink{vg_8c_a1c221f260a94426d6e484757ff49491a}{B}} (uint32\+\_\+t first)
+\item 
+int() \mbox{\hyperlink{vg_8c_a4a7701a7c35f0ff156dba3e5f9c9f48e}{print\+\_\+xpm}} (xpm\+\_\+map\+\_\+t xpm, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Prints a XPM to the buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{vg_8c_ab3b9fba29974056907761715260d408f}{load\+Background}} (xpm\+\_\+map\+\_\+t xpm)
+\begin{DoxyCompactList}\small\item\em Prints a XPM to the background buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{vg_8c_a9bd6a894426acd6e053f4588a58bdb46}{allocate\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Allocates space in the memory for the buffer and the background buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{vg_8c_a7404dbc0ccc5bd8380428e626d8e9741}{show\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Copies the buffer to the vram. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{vg_8c_a9ec124fc345e47823fb4a987a67fbecf}{clear\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Fills the buffer with 0 (black) \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{vg_8c_a506261f0e8ba0c315688dd3e31ba1305}{draw\+Background}} ()
+\begin{DoxyCompactList}\small\item\em Copies the background buffer to the buffer. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{vg_8c_a73ef05bd635a1f31ed93c0a27737f607}{free\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Frees the allocated memory for the buffer and background buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{vg_8c_a56ed84df35de10bdb65e72b184309497}{buffer}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{vg_8c_aa279b6fdc9f003ba0dcf0862c8a4dfaa}{background}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{vg_8c_adb1f08b438cf612e163fe7d66cde86d0}{vmi}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{vg_8c_a9bd6a894426acd6e053f4588a58bdb46}\label{vg_8c_a9bd6a894426acd6e053f4588a58bdb46}} 
+\index{vg.c@{vg.c}!allocateBuffer@{allocateBuffer}}
+\index{allocateBuffer@{allocateBuffer}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{allocateBuffer()}{allocateBuffer()}}
+{\footnotesize\ttfamily void() allocate\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allocates space in the memory for the buffer and the background buffer. 
+
+\mbox{\Hypertarget{vg_8c_a1c221f260a94426d6e484757ff49491a}\label{vg_8c_a1c221f260a94426d6e484757ff49491a}} 
+\index{vg.c@{vg.c}!B@{B}}
+\index{B@{B}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{B()}{B()}}
+{\footnotesize\ttfamily uint32\+\_\+t() B (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{vg_8c_a9ec124fc345e47823fb4a987a67fbecf}\label{vg_8c_a9ec124fc345e47823fb4a987a67fbecf}} 
+\index{vg.c@{vg.c}!clearBuffer@{clearBuffer}}
+\index{clearBuffer@{clearBuffer}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{clearBuffer()}{clearBuffer()}}
+{\footnotesize\ttfamily void() clear\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fills the buffer with 0 (black) 
+
+\mbox{\Hypertarget{vg_8c_a506261f0e8ba0c315688dd3e31ba1305}\label{vg_8c_a506261f0e8ba0c315688dd3e31ba1305}} 
+\index{vg.c@{vg.c}!drawBackground@{drawBackground}}
+\index{drawBackground@{drawBackground}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{drawBackground()}{drawBackground()}}
+{\footnotesize\ttfamily void() draw\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Copies the background buffer to the buffer. 
+
+\mbox{\Hypertarget{vg_8c_a73ef05bd635a1f31ed93c0a27737f607}\label{vg_8c_a73ef05bd635a1f31ed93c0a27737f607}} 
+\index{vg.c@{vg.c}!freeBuffer@{freeBuffer}}
+\index{freeBuffer@{freeBuffer}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{freeBuffer()}{freeBuffer()}}
+{\footnotesize\ttfamily void() free\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Frees the allocated memory for the buffer and background buffer. 
+
+\mbox{\Hypertarget{vg_8c_a34103732d16ab1b6ad266f756d0ec569}\label{vg_8c_a34103732d16ab1b6ad266f756d0ec569}} 
+\index{vg.c@{vg.c}!G@{G}}
+\index{G@{G}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily uint32\+\_\+t() G (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{vg_8c_ab3b9fba29974056907761715260d408f}\label{vg_8c_ab3b9fba29974056907761715260d408f}} 
+\index{vg.c@{vg.c}!loadBackground@{loadBackground}}
+\index{loadBackground@{loadBackground}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{loadBackground()}{loadBackground()}}
+{\footnotesize\ttfamily int() load\+Background (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm }\end{DoxyParamCaption})}
+
+
+
+Prints a XPM to the background buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm\+\_\+map\+\_\+t} & The XPM to be drawn \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vg_8c_a78d147fc7fb3c4f1a4b9dcf8c585b032}\label{vg_8c_a78d147fc7fb3c4f1a4b9dcf8c585b032}} 
+\index{vg.c@{vg.c}!map\_vram@{map\_vram}}
+\index{map\_vram@{map\_vram}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{map\_vram()}{map\_vram()}}
+{\footnotesize\ttfamily int() map\+\_\+vram (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Maps vram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t$\ast$} & The mode to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vg_8c_a4a7701a7c35f0ff156dba3e5f9c9f48e}\label{vg_8c_a4a7701a7c35f0ff156dba3e5f9c9f48e}} 
+\index{vg.c@{vg.c}!print\_xpm@{print\_xpm}}
+\index{print\_xpm@{print\_xpm}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{print\_xpm()}{print\_xpm()}}
+{\footnotesize\ttfamily int() print\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Prints a XPM to the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm\+\_\+map\+\_\+t} & The XPM to be drawn \\
+\hline
+{\em uint16\+\_\+t} & x coordinates \\
+\hline
+{\em uint16\+\_\+t} & y coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vg_8c_a3b0ee3706bd0c5bd06c24cd519b26f39}\label{vg_8c_a3b0ee3706bd0c5bd06c24cd519b26f39}} 
+\index{vg.c@{vg.c}!R@{R}}
+\index{R@{R}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{R()}{R()}}
+{\footnotesize\ttfamily uint32\+\_\+t() R (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{vg_8c_a7404dbc0ccc5bd8380428e626d8e9741}\label{vg_8c_a7404dbc0ccc5bd8380428e626d8e9741}} 
+\index{vg.c@{vg.c}!showBuffer@{showBuffer}}
+\index{showBuffer@{showBuffer}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{showBuffer()}{showBuffer()}}
+{\footnotesize\ttfamily void() show\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Copies the buffer to the vram. 
+
+\mbox{\Hypertarget{vg_8c_a1677f4b59f9e0584d82e0b655e4b7fc9}\label{vg_8c_a1677f4b59f9e0584d82e0b655e4b7fc9}} 
+\index{vg.c@{vg.c}!vg\_draw\_hline@{vg\_draw\_hline}}
+\index{vg\_draw\_hline@{vg\_draw\_hline}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a line in the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & x coordinates \\
+\hline
+{\em uint16\+\_\+t} & y coordinates \\
+\hline
+{\em uint16\+\_\+t} & length \\
+\hline
+{\em uint32\+\_\+t} & colour \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vg_8c_a08c498ffeb0a3962e3b7711b57397741}\label{vg_8c_a08c498ffeb0a3962e3b7711b57397741}} 
+\index{vg.c@{vg.c}!vg\_draw\_pixel@{vg\_draw\_pixel}}
+\index{vg\_draw\_pixel@{vg\_draw\_pixel}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel in the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & x coordinates \\
+\hline
+{\em uint16\+\_\+t} & y coordinates \\
+\hline
+{\em uint32\+\_\+t} & colour \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vg_8c_a8e70ce5e5caeabf6121dff1387870bbd}\label{vg_8c_a8e70ce5e5caeabf6121dff1387870bbd}} 
+\index{vg.c@{vg.c}!vg\_draw\_pixel\_to\_background@{vg\_draw\_pixel\_to\_background}}
+\index{vg\_draw\_pixel\_to\_background@{vg\_draw\_pixel\_to\_background}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel\_to\_background()}{vg\_draw\_pixel\_to\_background()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+pixel\+\_\+to\+\_\+background (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel in the background buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & x coordinates \\
+\hline
+{\em uint16\+\_\+t} & y coordinates \\
+\hline
+{\em uint32\+\_\+t} & colour \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vg_8c_a99d2da2559e11200c6b40c469e9977ec}\label{vg_8c_a99d2da2559e11200c6b40c469e9977ec}} 
+\index{vg.c@{vg.c}!vg\_draw\_rectangle@{vg\_draw\_rectangle}}
+\index{vg\_draw\_rectangle@{vg\_draw\_rectangle}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & x coordinates \\
+\hline
+{\em uint16\+\_\+t} & y coordinates \\
+\hline
+{\em uint16\+\_\+t} & width \\
+\hline
+{\em uint16\+\_\+t} & height \\
+\hline
+{\em uint32\+\_\+t} & colour \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vg_8c_afa0e432c3ebeefc29a59abc4d22918df}\label{vg_8c_afa0e432c3ebeefc29a59abc4d22918df}} 
+\index{vg.c@{vg.c}!vg\_init@{vg\_init}}
+\index{vg\_init@{vg\_init}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{vg\_init()}{vg\_init()}}
+{\footnotesize\ttfamily void $\ast$() vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initializes video mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t$\ast$} & The mode to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the beggining of the screen memory 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{vg_8c_aa279b6fdc9f003ba0dcf0862c8a4dfaa}\label{vg_8c_aa279b6fdc9f003ba0dcf0862c8a4dfaa}} 
+\index{vg.c@{vg.c}!background@{background}}
+\index{background@{background}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ background}
+
+\mbox{\Hypertarget{vg_8c_a56ed84df35de10bdb65e72b184309497}\label{vg_8c_a56ed84df35de10bdb65e72b184309497}} 
+\index{vg.c@{vg.c}!buffer@{buffer}}
+\index{buffer@{buffer}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ buffer}
+
+\mbox{\Hypertarget{vg_8c_adb1f08b438cf612e163fe7d66cde86d0}\label{vg_8c_adb1f08b438cf612e163fe7d66cde86d0}} 
+\index{vg.c@{vg.c}!vmi@{vmi}}
+\index{vmi@{vmi}!vg.c@{vg.c}}
+\doxysubsubsection{\texorpdfstring{vmi}{vmi}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t vmi}
+

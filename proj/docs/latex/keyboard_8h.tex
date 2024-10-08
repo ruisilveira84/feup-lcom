@@ -1,0 +1,110 @@
+\hypertarget{keyboard_8h}{}\doxysection{src/keyboard.h File Reference}
+\label{keyboard_8h}\index{src/keyboard.h@{src/keyboard.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{keyboard_8h_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Handles interrupts for keyboard Writes to uint8\+\_\+t kbd\+\_\+read;. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_ae794569a8cc905715bc352d97f653066}{kbd\+\_\+subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes to keyboard interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_aac62acb8cac4eb2a488b3b922c42d61f}{kbd\+\_\+unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes from keyboard interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_a2299d4187c164e5b901efd43ccf968ca}{kbd\+\_\+status\+\_\+reg\+\_\+reader}} (uint8\+\_\+t $\ast$b)
+\begin{DoxyCompactList}\small\item\em Reads from the keyboard status register. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_aec5955821185b7dacf28b937d0e17c95}{kbd\+\_\+output\+\_\+buffer\+\_\+reader}} (uint8\+\_\+t $\ast$b)
+\begin{DoxyCompactList}\small\item\em Reads from the keyboard output buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_a58017421d19bb2004825d339ebb600fa}{keyboard\+\_\+restore}} ()
+\begin{DoxyCompactList}\small\item\em Reastores keyboard usage after polling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8h_aea970a154161a35f6894898a092ed70a}\label{keyboard_8h_aea970a154161a35f6894898a092ed70a}} 
+\index{keyboard.h@{keyboard.h}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles interrupts for keyboard Writes to uint8\+\_\+t kbd\+\_\+read;. 
+
+\mbox{\Hypertarget{keyboard_8h_aec5955821185b7dacf28b937d0e17c95}\label{keyboard_8h_aec5955821185b7dacf28b937d0e17c95}} 
+\index{keyboard.h@{keyboard.h}!kbd\_output\_buffer\_reader@{kbd\_output\_buffer\_reader}}
+\index{kbd\_output\_buffer\_reader@{kbd\_output\_buffer\_reader}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbd\_output\_buffer\_reader()}{kbd\_output\_buffer\_reader()}}
+{\footnotesize\ttfamily int() kbd\+\_\+output\+\_\+buffer\+\_\+reader (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+Reads from the keyboard output buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & Variable for the output to be written into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a2299d4187c164e5b901efd43ccf968ca}\label{keyboard_8h_a2299d4187c164e5b901efd43ccf968ca}} 
+\index{keyboard.h@{keyboard.h}!kbd\_status\_reg\_reader@{kbd\_status\_reg\_reader}}
+\index{kbd\_status\_reg\_reader@{kbd\_status\_reg\_reader}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbd\_status\_reg\_reader()}{kbd\_status\_reg\_reader()}}
+{\footnotesize\ttfamily int() kbd\+\_\+status\+\_\+reg\+\_\+reader (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+Reads from the keyboard status register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & Variable for the output to be written into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_ae794569a8cc905715bc352d97f653066}\label{keyboard_8h_ae794569a8cc905715bc352d97f653066}} 
+\index{keyboard.h@{keyboard.h}!kbd\_subscribe@{kbd\_subscribe}}
+\index{kbd\_subscribe@{kbd\_subscribe}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbd\_subscribe()}{kbd\_subscribe()}}
+{\footnotesize\ttfamily int() kbd\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes to keyboard interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & bit number for bitmask \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_aac62acb8cac4eb2a488b3b922c42d61f}\label{keyboard_8h_aac62acb8cac4eb2a488b3b922c42d61f}} 
+\index{keyboard.h@{keyboard.h}!kbd\_unsubscribe@{kbd\_unsubscribe}}
+\index{kbd\_unsubscribe@{kbd\_unsubscribe}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbd\_unsubscribe()}{kbd\_unsubscribe()}}
+{\footnotesize\ttfamily int() kbd\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes from keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a58017421d19bb2004825d339ebb600fa}\label{keyboard_8h_a58017421d19bb2004825d339ebb600fa}} 
+\index{keyboard.h@{keyboard.h}!keyboard\_restore@{keyboard\_restore}}
+\index{keyboard\_restore@{keyboard\_restore}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_restore()}{keyboard\_restore()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+restore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reastores keyboard usage after polling. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}

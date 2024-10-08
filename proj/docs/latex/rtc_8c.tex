@@ -1,0 +1,142 @@
+\hypertarget{rtc_8c}{}\doxysection{src/rtc.c File Reference}
+\label{rtc_8c}\index{src/rtc.c@{src/rtc.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{rtc_8c_ab4bcca6758c0eee348ab56ba991ead76}{read\+Rtc}} (uint8\+\_\+t loc, uint8\+\_\+t $\ast$out)
+\begin{DoxyCompactList}\small\item\em Reads from the RTC. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{rtc_8c_a846a6b45f1bba534592b40006cb2890e}{rtc\+Updating}} ()
+\begin{DoxyCompactList}\small\item\em Checks if RTC updating. \end{DoxyCompactList}\item 
+bool() \mbox{\hyperlink{rtc_8c_afd3ee4a2480f02fb8b23c8b4452d59cc}{rtc\+Binary}} ()
+\begin{DoxyCompactList}\small\item\em Checks if RTC is in binary mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{rtc_8c_aebd89832ae7e5b09a3ab02feccf6c023}{to\+Binary}} (uint8\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Converts a number to binary. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_ac4f14c22b777d07aecd5f55b02ecc5e8}{rtc\+Read\+Hours}} (uint8\+\_\+t $\ast$out)
+\begin{DoxyCompactList}\small\item\em Reads hours. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_a2d5cd68e072711a16a9f264898622b94}{rtc\+Read\+Minutes}} (uint8\+\_\+t $\ast$out)
+\begin{DoxyCompactList}\small\item\em Reads minutes. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8c_ac750e8cbef675f155be60c814728cf11}{rtc\+Read\+Seconds}} (uint8\+\_\+t $\ast$out)
+\begin{DoxyCompactList}\small\item\em Reads seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_ab4bcca6758c0eee348ab56ba991ead76}\label{rtc_8c_ab4bcca6758c0eee348ab56ba991ead76}} 
+\index{rtc.c@{rtc.c}!readRtc@{readRtc}}
+\index{readRtc@{readRtc}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{readRtc()}{readRtc()}}
+{\footnotesize\ttfamily int() read\+Rtc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{loc,  }\item[{uint8\+\_\+t $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+Reads from the RTC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & The port to read from \\
+\hline
+{\em uint8\+\_\+t} & The variable where the output is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_afd3ee4a2480f02fb8b23c8b4452d59cc}\label{rtc_8c_afd3ee4a2480f02fb8b23c8b4452d59cc}} 
+\index{rtc.c@{rtc.c}!rtcBinary@{rtcBinary}}
+\index{rtcBinary@{rtcBinary}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtcBinary()}{rtcBinary()}}
+{\footnotesize\ttfamily bool() rtc\+Binary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if RTC is in binary mode. 
+
+\begin{DoxyReturn}{Returns}
+0 if it isn\textquotesingle{}t, 1 if it is 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_ac4f14c22b777d07aecd5f55b02ecc5e8}\label{rtc_8c_ac4f14c22b777d07aecd5f55b02ecc5e8}} 
+\index{rtc.c@{rtc.c}!rtcReadHours@{rtcReadHours}}
+\index{rtcReadHours@{rtcReadHours}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtcReadHours()}{rtcReadHours()}}
+{\footnotesize\ttfamily int() rtc\+Read\+Hours (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+Reads hours. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & The variable where the output will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_a2d5cd68e072711a16a9f264898622b94}\label{rtc_8c_a2d5cd68e072711a16a9f264898622b94}} 
+\index{rtc.c@{rtc.c}!rtcReadMinutes@{rtcReadMinutes}}
+\index{rtcReadMinutes@{rtcReadMinutes}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtcReadMinutes()}{rtcReadMinutes()}}
+{\footnotesize\ttfamily int() rtc\+Read\+Minutes (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+Reads minutes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & The variable where the output will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_ac750e8cbef675f155be60c814728cf11}\label{rtc_8c_ac750e8cbef675f155be60c814728cf11}} 
+\index{rtc.c@{rtc.c}!rtcReadSeconds@{rtcReadSeconds}}
+\index{rtcReadSeconds@{rtcReadSeconds}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtcReadSeconds()}{rtcReadSeconds()}}
+{\footnotesize\ttfamily int() rtc\+Read\+Seconds (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+Reads seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & The variable where the output will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_a846a6b45f1bba534592b40006cb2890e}\label{rtc_8c_a846a6b45f1bba534592b40006cb2890e}} 
+\index{rtc.c@{rtc.c}!rtcUpdating@{rtcUpdating}}
+\index{rtcUpdating@{rtcUpdating}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtcUpdating()}{rtcUpdating()}}
+{\footnotesize\ttfamily bool() rtc\+Updating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if RTC updating. 
+
+\begin{DoxyReturn}{Returns}
+0 if it isn\textquotesingle{}t, 1 if it is 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_aebd89832ae7e5b09a3ab02feccf6c023}\label{rtc_8c_aebd89832ae7e5b09a3ab02feccf6c023}} 
+\index{rtc.c@{rtc.c}!toBinary@{toBinary}}
+\index{toBinary@{toBinary}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{toBinary()}{toBinary()}}
+{\footnotesize\ttfamily uint8\+\_\+t() to\+Binary (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Converts a number to binary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & The number to convert to binary \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The converted number 
+\end{DoxyReturn}

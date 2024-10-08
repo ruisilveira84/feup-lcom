@@ -1,0 +1,74 @@
+\hypertarget{utils_8h}{}\doxysection{src/utils.h File Reference}
+\label{utils_8h}\index{src/utils.h@{src/utils.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{utils_8h_a81621440b3d65680979425e39aa8c789}{util\+\_\+get\+\_\+\+LSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$lsb)
+\begin{DoxyCompactList}\small\item\em Gets the least significant byte of a number with 2 bytes. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{utils_8h_a6a880076cd2ec468834438b6e0c58836}{util\+\_\+get\+\_\+\+MSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$msb)
+\begin{DoxyCompactList}\small\item\em Gets the most significant byte of a number with 2 bytes. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{utils_8h_a79a031a8611f5b2d6afa4158e92b0fb4}{util\+\_\+sys\+\_\+inb}} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em sys\+\_\+inb wrapper for uint8\+\_\+t values \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8h_a81621440b3d65680979425e39aa8c789}\label{utils_8h_a81621440b3d65680979425e39aa8c789}} 
+\index{utils.h@{utils.h}!util\_get\_LSB@{util\_get\_LSB}}
+\index{util\_get\_LSB@{util\_get\_LSB}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{util\_get\_LSB()}{util\_get\_LSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+LSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{lsb }\end{DoxyParamCaption})}
+
+
+
+Gets the least significant byte of a number with 2 bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & The number with two bytes \\
+\hline
+{\em uint8\+\_\+t} & The variable it will be written into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8h_a6a880076cd2ec468834438b6e0c58836}\label{utils_8h_a6a880076cd2ec468834438b6e0c58836}} 
+\index{utils.h@{utils.h}!util\_get\_MSB@{util\_get\_MSB}}
+\index{util\_get\_MSB@{util\_get\_MSB}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{util\_get\_MSB()}{util\_get\_MSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+MSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{msb }\end{DoxyParamCaption})}
+
+
+
+Gets the most significant byte of a number with 2 bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & The number with two bytes \\
+\hline
+{\em uint8\+\_\+t} & The variable it will be written into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8h_a79a031a8611f5b2d6afa4158e92b0fb4}\label{utils_8h_a79a031a8611f5b2d6afa4158e92b0fb4}} 
+\index{utils.h@{utils.h}!util\_sys\_inb@{util\_sys\_inb}}
+\index{util\_sys\_inb@{util\_sys\_inb}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{util\_sys\_inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int() util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+sys\+\_\+inb wrapper for uint8\+\_\+t values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & The port to write the command into \\
+\hline
+{\em uint8\+\_\+t} & The command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 otherwise 
+\end{DoxyReturn}
