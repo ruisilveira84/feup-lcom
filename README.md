@@ -1,10 +1,16 @@
-# LCOM Project
+# Computer Graphics 2022/2023
 
-LCOM Project for group T04G5.
+This repository contains the weekly labs and group project for the [LCOM](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520323) course unit at [FEUP](https://sigarra.up.pt/feup/pt/web_page.inicial).
 
-Group members:
+## Group T04G5
+| Name             | Number    | E-Mail             |
+| ---------------- | --------- | ------------------ |
+| Luís Sousa       | 202005832 | up202005832@up.pt  |
+| Rúben Esteves    | 202006479 | up202006479@up.pt  |
+| Rui Silveira     | 202108878 | up202108878@up.pt  |
+| Tiago Gouveia    | 202108783 | up202108783@up.pt  |
 
-1. Tiago Gouveia (up202108783@fe.up.pt)
-2. Rúben Esteves (up202006479@fe.up.pt)
-3. Rui Silveira (up202108878@fe.up.pt)
-4. Luís Sousa (up202005832@fe.up.pt)
+## Project Docs
+
+  - [Project Report](proj/docs/LC-report.pdf)
+  - [Apresentarion Video](proj/docs/lcomVideo.mp4)
